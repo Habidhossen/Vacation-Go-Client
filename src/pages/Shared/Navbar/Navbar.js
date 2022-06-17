@@ -1,10 +1,17 @@
 import { Link, NavLink } from "react-router-dom";
+import "../../../assets/styles/style.css";
 
 const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          className="nav-link"
+          // className="bg-transparent text-black uppercase hover:bg-transparent focus:bg-transparent focus:font-medium focus:text-primary active:bg-transparent"
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       {/* {user && (
             <li>
@@ -12,10 +19,22 @@ const Navbar = () => {
             </li>
           )} */}
       <li>
-        <NavLink to="/services">Services</NavLink>
+        <NavLink
+          className="nav-link"
+          // className="bg-transparent text-black uppercase hover:bg-transparent focus:bg-transparent focus:font-medium focus:text-primary active:bg-transparent"
+          to="/services"
+        >
+          Services
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/blogs">Blogs</NavLink>
+        <NavLink
+          className="nav-link"
+          // className="bg-transparent text-black uppercase hover:bg-transparent focus:bg-transparent focus:font-medium focus:text-primary active:bg-transparent"
+          to="/blogs"
+        >
+          Blogs
+        </NavLink>
       </li>
       {/* <li>
             {user ? (
@@ -30,7 +49,7 @@ const Navbar = () => {
   );
   return (
     <nav>
-      <div className="navbar sticky top-0 z-50 backdrop-filter backdrop-blur-2xl py-3 lg:px-12">
+      <div className="navbar sticky top-0 z-50 backdrop-filter backdrop-blur-2xl py-3 lg:px-20">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">

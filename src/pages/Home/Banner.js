@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import "../../assets/styles/style.css";
 
 // Import Swiper styles
 import { Autoplay, Navigation, Pagination } from "swiper";
