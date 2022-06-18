@@ -1,5 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+// Import React-Icon
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 // Import Swiper styles
 import "swiper/css";
@@ -104,6 +106,12 @@ const Reviews = () => {
           <div className="reviewCard"></div>
         </SwiperSlide>
       </Swiper>
+
+      <div className="flex justify-end mt-6">
+        <button className="section-footer-btn">
+          See All Reviews <FaLongArrowAltRight />
+        </button>
+      </div>
     </section>
   );
 };
