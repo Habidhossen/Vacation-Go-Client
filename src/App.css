@@ -9,8 +9,12 @@
 body {
   font-family: "Cinzel Decorative", cursive;
   font-family: "Poppins", sans-serif;
+  background-color: var(--greyBg);
 }
 
 :root {
   --color-primary: #fc5b62;
+  --heading: #0f172a;
+  --text: #4e4c55;
+  --greyBg: #f7f7f7;
 }
