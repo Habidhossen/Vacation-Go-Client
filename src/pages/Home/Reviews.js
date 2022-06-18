@@ -102,9 +102,6 @@ const Reviews = () => {
             <Review key={review._id} review={review} />
           </SwiperSlide>
         ))}
-        <SwiperSlide>
-          <div className="reviewCard"></div>
-        </SwiperSlide>
       </Swiper>
 
       <div className="flex justify-end mt-6">
