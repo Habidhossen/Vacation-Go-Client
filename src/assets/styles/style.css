@@ -18,6 +18,24 @@
   color: var(--color-primary) !important;
 }
 
+/* Section Title Style */
+.section-title {
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  position: relative;
+}
+.section-title span {
+  color: var(--color-primary);
+}
+.section-title-bar {
+  background-color: var(--color-primary);
+  height: 2px;
+  width: 50px;
+}
+
 /* Customize swiper-slider button color */
 .swiper-pagination-bullet {
   background-color: var(--color-primary) !important;

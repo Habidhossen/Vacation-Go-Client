@@ -42,7 +42,7 @@ const Banner = () => {
           }}
         >
           <div className="flex flex-col justify-start items-start px-20">
-            <h1 className="text-6xl font-bold leading-snug">
+            <h1 className="text-6xl font-bold leading-snug uppercase">
               Let's <span className="text-[#fc5b62]">Discover</span> <br />
               The World Together!
             </h1>
@@ -65,7 +65,7 @@ const Banner = () => {
           }}
         >
           <div className="flex flex-col justify-start items-start px-20">
-            <h1 className="text-6xl font-bold leading-snug">
+            <h1 className="text-6xl font-bold leading-snug uppercase">
               Your Perfect <br />
               <span className="text-[#fc5b62]">Adventure</span> Experience!
             </h1>
@@ -88,7 +88,7 @@ const Banner = () => {
           }}
         >
           <div className="flex flex-col justify-start items-start px-20">
-            <h1 className="text-6xl font-bold leading-snug">
+            <h1 className="text-6xl font-bold leading-snug uppercase">
               Book Your <br />
               <span className="text-[#fc5b62]">Travel</span> Now!
             </h1>

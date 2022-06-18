@@ -9,6 +9,7 @@ import { Pagination } from "swiper";
 const Reviews = () => {
   return (
     <>
+      <h1>Happy Traveler Says</h1>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
