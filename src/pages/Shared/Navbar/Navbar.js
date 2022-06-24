@@ -1,7 +1,18 @@
+import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { HiOutlineLogout } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
 import "../../../assets/styles/style.css";
+import auth from "../../../Firebase/firebase.init";
 
 const Navbar = () => {
+  const [user] = useAuthState(auth); // get user info from useAuthState
+
+  // handle logout
+  const logout = () => {
+    signOut(auth);
+  };
+
   const menuItems = (
     <>
       <li>
@@ -9,11 +20,13 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      {/* {user && (
-            <li>
-              <NavLink to="/dashboard">Dashboard</NavLink>
-            </li>
-          )} */}
+      {user && (
+        <li>
+          <NavLink className="nav-link" to="/dashboard">
+            Dashboard
+          </NavLink>
+        </li>
+      )}
       <li>
         <NavLink className="nav-link" to="/services">
           Services
@@ -29,15 +42,41 @@ const Navbar = () => {
           About
         </NavLink>
       </li>
+      <li>
+        <NavLink className="nav-link" to="/contact">
+          Contact
+        </NavLink>
+      </li>
       {/* <li>
-            {user ? (
+        {user ? (
+          // <button onClick={logout} className="text-error">
+          //   LOGOUT
+          // </button>
+
+          <div class="dropdown dropdown-hover dropdown-left dropdown-end">
+            <label tabindex="0" class="nav-link flex">
+              Hover
+              <div class="avatar">
+                <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="https://api.lorem.space/image/face?hash=3174" />
+                </div>
+              </div>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <button onClick={logout} className="text-error">
-                Logout
+                LOGOUT
               </button>
-            ) : (
-              <NavLink to="/login">Login</NavLink>
-            )}
-          </li> */}
+            </ul>
+          </div>
+        ) : (
+          <NavLink className="nav-link" to="/login">
+            Login
+          </NavLink>
+        )}
+      </li> */}
     </>
   );
   return (
@@ -86,7 +125,7 @@ const Navbar = () => {
           ></path>
         </svg>
       </label> */}
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
       <div className="navbar-end lg:hidden">
@@ -105,6 +144,42 @@ const Navbar = () => {
             ></path>
           </svg>
         </label>
+      </div>
+      <div class="navbar-end">
+        {user ? (
+          // <button onClick={logout} className="text-error">
+          //   LOGOUT
+          // </button>
+
+          <div class="dropdown dropdown-hover dropdown-end">
+            <label tabindex="0" class="flex items-center gap-3">
+              {user.displayName}
+              <div class="avatar">
+                <div class="w-10 rounded-full ring-2 ring-primary ring-offset-base-100 ring-offset-2">
+                  {user.photoURL !== null ? (
+                    <img src={user.photoURL} />
+                  ) : (
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
+                  )}
+                </div>
+              </div>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <button onClick={logout} className="text-error font-semibold">
+                  LOGOUT <HiOutlineLogout />
+                </button>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <NavLink className="nav-link" to="/login">
+            Login
+          </NavLink>
+        )}
       </div>
     </nav>
   );
