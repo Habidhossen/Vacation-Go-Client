@@ -70,19 +70,23 @@
   width: 100%;
 }
 .service-card-title {
+  margin-top: 10px;
   font-family: "Cinzel Decorative", cursive;
   font-size: 20px;
   font-weight: bold;
   color: var(--heading);
 }
 .service-card-text {
+  margin: 14px 0;
   font-size: 14px;
   color: var(--text);
 }
 .service-card-price {
+  margin-top: 8px;
   font-family: "Cinzel Decorative", cursive;
   font-size: 16px;
   font-weight: bold;
+  color: var(--color-primary);
 }
 .checkout-btn {
   width: 100%;
@@ -152,9 +156,13 @@
 }
 .blog-card-title {
   font-family: "Cinzel Decorative", cursive;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 10px 0 20px;
+  margin-top: 10px;
+}
+.blog-card-desc {
+  font-size: 14px;
+  margin: 10px 0;
 }
 .blog-card-btn {
   color: var(--color-primary);

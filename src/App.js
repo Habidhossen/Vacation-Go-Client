@@ -1,7 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import AddBlog from "./pages/Dashboard/AddBlog/AddBlog";
 import AddReview from "./pages/Dashboard/AddReview/AddReview";
+import AddService from "./pages/Dashboard/AddService/AddService";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+import ManageBlog from "./pages/Dashboard/ManageBlog/ManageBlog";
+import ManageBooking from "./pages/Dashboard/ManageBooking/ManageBooking";
+import ManageService from "./pages/Dashboard/ManageService/ManageService";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import HomePage from "./pages/Home/HomePage";
 import Login from "./pages/Login/Login/Login";
@@ -27,7 +32,12 @@ function App() {
           }
         >
           <Route index element={<MyProfile />} />
-          <Route path="review" element={<AddReview />} />
+          <Route path="add-review" element={<AddReview />} />
+          <Route path="add-service" element={<AddService />} />
+          <Route path="add-blog" element={<AddBlog />} />
+          <Route path="manage-service" element={<ManageService />} />
+          <Route path="manage-blog" element={<ManageBlog />} />
+          <Route path="manage-booking" element={<ManageBooking />} />
         </Route>
       </Routes>
     </div>

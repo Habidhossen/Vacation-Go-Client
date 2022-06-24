@@ -3,7 +3,6 @@ import auth from "../../../Firebase/firebase.init";
 
 const MyProfile = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
-  console.log(user);
 
   return (
     <section>
