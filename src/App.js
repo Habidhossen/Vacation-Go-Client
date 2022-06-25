@@ -8,6 +8,7 @@ import ManageBlog from "./pages/Dashboard/ManageBlog/ManageBlog";
 import ManageBooking from "./pages/Dashboard/ManageBooking/ManageBooking";
 import ManageService from "./pages/Dashboard/ManageService/ManageService";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
+import CheckOut from "./pages/Home/CheckOut";
 import HomePage from "./pages/Home/HomePage";
 import Login from "./pages/Login/Login/Login";
 import RequireAuth from "./pages/Login/RequireAuth/RequireAuth";
@@ -22,7 +23,14 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-
+        <Route
+          path="/service/:serviceID"
+          element={
+            <RequireAuth>
+              <CheckOut />
+            </RequireAuth>
+          }
+        />
         <Route
           path="/dashboard"
           element={
