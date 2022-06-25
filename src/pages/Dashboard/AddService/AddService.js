@@ -11,7 +11,6 @@ const AddService = () => {
 
   // submit button
   const onSubmit = (serviceData) => {
-    console.log(serviceData);
     // send data to the server
     fetch("http://localhost:5000/service", {
       method: "POST",
