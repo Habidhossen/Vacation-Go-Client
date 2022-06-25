@@ -7,7 +7,7 @@ import auth from "../../../Firebase/firebase.init";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
-  const [admin] = useState(true); //from admin hook
+  const [admin] = useState(false); //from admin hook
 
   return (
     <div className="drawer drawer-mobile">

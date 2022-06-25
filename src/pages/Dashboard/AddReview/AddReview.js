@@ -15,14 +15,16 @@ const AddReview = () => {
 
   // submit button
   const onSubmit = (data) => {
-    const profileImg = user?.photoURL;
+    const profileImg = user?.photoURL
+      ? user?.photoURL
+      : "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png";
     const name = data.name;
     const rating = data.rating;
     const msg = data.msg;
     const reviewData = { profileImg, name, rating, msg };
 
     // send data to the server
-    fetch("", {
+    fetch("http://localhost:5000/review", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
