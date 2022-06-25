@@ -15,7 +15,7 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import Review from "./Review";
 
 const Reviews = () => {
-  // fetch data using react query
+  // fetch data from database using react query
   const {
     data: reviews,
     isLoading,
@@ -24,6 +24,7 @@ const Reviews = () => {
     fetch("http://localhost:5000/review").then((res) => res.json())
   );
 
+  // loading
   if (isLoading) {
     return <Loader />;
   }

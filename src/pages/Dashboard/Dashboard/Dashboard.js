@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../../Firebase/firebase.init";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
-  const [admin] = useState(false); //from admin hook
+  const [admin] = useState(true); //from admin hook
 
   return (
     <div className="drawer drawer-mobile">
@@ -19,25 +19,37 @@ const Dashboard = () => {
         <label htmlFor="side-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 sm:bg-transparent text-base-content">
           <li>
-            <Link to="">My Profile</Link>
+            <NavLink className="nav-link" to="">
+              My Profile
+            </NavLink>
           </li>
 
           {admin ? (
             <>
               <li>
-                <Link to="add-service">Add a Service</Link>
+                <NavLink className="nav-link" to="add-service">
+                  Add a Service
+                </NavLink>
               </li>
               <li>
-                <Link to="add-blog">Add a Blog</Link>
+                <NavLink className="nav-link" to="add-blog">
+                  Add a Blog
+                </NavLink>
               </li>
               <li>
-                <Link to="manage-service">Manage Services</Link>
+                <NavLink className="nav-link" to="manage-service">
+                  Manage Services
+                </NavLink>
               </li>
               <li>
-                <Link to="manage-blog">Manage Blogs</Link>
+                <NavLink className="nav-link" to="manage-blog">
+                  Manage Blogs
+                </NavLink>
               </li>
               <li>
-                <Link to="manage-booking">Manage all Bookings</Link>
+                <NavLink className="nav-link" to="manage-booking">
+                  Manage all Bookings
+                </NavLink>
               </li>
               {/* <li>
                 <Link to="make-admin">Make Admin</Link>
