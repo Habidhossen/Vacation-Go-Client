@@ -147,7 +147,7 @@ const CheckOut = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Current Date</span>
+                  <span className="label-text">Booking Date</span>
                 </label>
                 <input
                   type="date"

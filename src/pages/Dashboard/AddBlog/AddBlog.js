@@ -2,6 +2,11 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const AddBlog = () => {
+  // get current date and formatted too
+  const date = new Date().toDateString().split(" ");
+  const currentDate = date[2] + " " + date[1] + " " + date[3];
+  console.log(currentDate);
+
   const {
     register,
     formState: { errors },
@@ -10,7 +15,13 @@ const AddBlog = () => {
   } = useForm();
 
   // submit button
-  const onSubmit = (blogData) => {
+  const onSubmit = (data) => {
+    const imgURL = data.imgURL;
+    const title = data.title;
+    const desc = data.desc;
+    const date = currentDate;
+    const blogData = { imgURL, title, desc, date };
+
     // send data to the server
     fetch("http://localhost:5000/blog", {
       method: "POST",

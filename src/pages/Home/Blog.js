@@ -1,11 +1,11 @@
 import "../../assets/styles/style.css";
 
 const Blog = ({ blog }) => {
-  const { img, date, title, desc } = blog;
+  const { imgURL, date, title, desc } = blog;
 
   return (
     <div className="blog-card">
-      <img className="blog-card-img" src={img} alt="" />
+      <img className="blog-card-img" src={imgURL} alt="" />
       <div>
         <p className="blog-card-date">{date}</p>
         <h1 className="blog-card-title">{title}</h1>

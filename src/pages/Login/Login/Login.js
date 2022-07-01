@@ -113,7 +113,7 @@ const Login = () => {
           <div className="divider">OR</div>
           <button
             onClick={handleGoogleSignIn}
-            className="btn btn-outline btn-success gap-2"
+            className="btn btn-outline gap-2"
           >
             <FcGoogle className="text-2xl" /> Continue with Google
           </button>

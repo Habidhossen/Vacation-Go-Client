@@ -1,9 +1,21 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { useQuery } from "react-query";
 import "../../assets/styles/style.css";
+import Loader from "../Shared/Loader/Loader";
 import Blog from "./Blog";
 
 const Blogs = () => {
-  const blogsData = [
+  // fetch data from database using react query
+  const { data: blogs, isLoading } = useQuery("blogs", () =>
+    fetch("http://localhost:5000/blog").then((res) => res.json())
+  );
+
+  // loading
+  if (isLoading) {
+    return <Loader />;
+  }
+
+  /* const blogsData = [
     {
       _id: 1,
       img: "http://nunforest.com/triptip-demo/upload/top3.jpg",
@@ -32,7 +44,7 @@ const Blogs = () => {
       title: "Happy Tour and Travel",
       desc: "Lorem ipsum dolor, sit amet consectetur adi Lorem ipsum dolor, sit amet consectetur adi",
     },
-  ];
+  ]; */
 
   return (
     <section className="my-16 px-20">
@@ -47,7 +59,7 @@ const Blogs = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        {blogsData.map((blog) => (
+        {blogs.map((blog) => (
           <Blog key={blog._id} blog={blog} />
         ))}
       </div>

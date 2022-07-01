@@ -31,9 +31,6 @@ const SpecialPart = () => {
         <h3 className="text-5xl text-white font-semibold uppercase">
           HOLIDAY SPECIAL 25% OFF !
         </h3>
-        <h4 className="bg-primary px-8 py-4 text-white text-2xl font-medium rounded-xl">
-          $999
-        </h4>
       </div>
     </section>
   );

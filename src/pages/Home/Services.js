@@ -5,11 +5,7 @@ import Service from "./Service";
 
 const Services = () => {
   // fetch data from database using react query
-  const {
-    data: services,
-    isLoading,
-    refetch,
-  } = useQuery("services", () =>
+  const { data: services, isLoading } = useQuery("services", () =>
     fetch("http://localhost:5000/service").then((res) => res.json())
   );
 

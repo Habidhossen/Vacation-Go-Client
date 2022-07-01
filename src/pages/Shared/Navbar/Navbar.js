@@ -152,7 +152,7 @@ const Navbar = () => {
           // </button>
 
           <div class="dropdown dropdown-hover dropdown-end">
-            <label tabindex="0" class="flex items-center gap-3">
+            <label tabindex="0" class="flex items-center gap-3 text-primary">
               {user.displayName}
               <div class="avatar">
                 <div class="w-10 rounded-full ring-2 ring-primary ring-offset-base-100 ring-offset-2">
@@ -169,7 +169,15 @@ const Navbar = () => {
               class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <button onClick={logout} className="text-error font-semibold">
+                <Link to="dashboard" className="text-center mb-2">
+                  View Profile
+                </Link>
+              </li>
+              <li>
+                <button
+                  onClick={logout}
+                  className="text-white font-semibold text-sm flex justify-center bg-primary"
+                >
                   LOGOUT <HiOutlineLogout />
                 </button>
               </li>
