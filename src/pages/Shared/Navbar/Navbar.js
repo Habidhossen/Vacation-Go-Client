@@ -47,36 +47,6 @@ const Navbar = () => {
           Contact
         </NavLink>
       </li>
-      {/* <li>
-        {user ? (
-          // <button onClick={logout} className="text-error">
-          //   LOGOUT
-          // </button>
-
-          <div class="dropdown dropdown-hover dropdown-left dropdown-end">
-            <label tabindex="0" class="nav-link flex">
-              Hover
-              <div class="avatar">
-                <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="https://api.lorem.space/image/face?hash=3174" />
-                </div>
-              </div>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <button onClick={logout} className="text-error">
-                LOGOUT
-              </button>
-            </ul>
-          </div>
-        ) : (
-          <NavLink className="nav-link" to="/login">
-            Login
-          </NavLink>
-        )}
-      </li> */}
     </>
   );
   return (
@@ -110,21 +80,6 @@ const Navbar = () => {
           <span>Vacation</span> Go
         </Link>
       </div>
-      {/* <label htmlFor="side-drawer" className="btn btn-primary  lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="inline-block w-5 h-5 stroke-current"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </label> */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
@@ -155,7 +110,7 @@ const Navbar = () => {
             <label tabindex="0" class="flex items-center gap-3 text-primary">
               {user.displayName}
               <div class="avatar">
-                <div class="w-10 rounded-full ring-2 ring-primary ring-offset-base-100 ring-offset-2">
+                <div class="w-8 rounded-full ring-1 ring-primary ring-offset-base-100 ring-offset-2">
                   {user.photoURL !== null ? (
                     <img src={user.photoURL} />
                   ) : (
@@ -176,7 +131,7 @@ const Navbar = () => {
               <li>
                 <button
                   onClick={logout}
-                  className="text-white font-semibold text-sm flex justify-center bg-primary"
+                  className="text-white font-semibold text-sm flex justify-center bg-primary hover:bg-rose-600"
                 >
                   LOGOUT <HiOutlineLogout />
                 </button>

@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
 import ManageBlog from "./pages/Dashboard/ManageBlog/ManageBlog";
 import ManageBooking from "./pages/Dashboard/ManageBooking/ManageBooking";
 import ManageService from "./pages/Dashboard/ManageService/ManageService";
+import MyBooking from "./pages/Dashboard/MyBooking/MyBooking";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import CheckOut from "./pages/Home/CheckOut";
 import HomePage from "./pages/Home/HomePage";
@@ -40,6 +41,7 @@ function App() {
           }
         >
           <Route index element={<MyProfile />} />
+          <Route path="booking" element={<MyBooking />} />
           <Route path="add-review" element={<AddReview />} />
           <Route path="add-service" element={<AddService />} />
           <Route path="add-blog" element={<AddBlog />} />

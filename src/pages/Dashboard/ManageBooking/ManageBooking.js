@@ -17,7 +17,7 @@ const ManageBooking = () => {
     return <Loader />;
   }
 
-  // handle service delete button
+  // handle Booking delete button
   const handleBookingDelete = (id) => {
     const confirm = window.confirm("Are you sure you want to Delete?");
 
@@ -37,6 +37,7 @@ const ManageBooking = () => {
         });
     }
   };
+
   return (
     <div>
       <div className="overflow-x-auto p-4">
@@ -46,19 +47,17 @@ const ManageBooking = () => {
         <table className="table w-full">
           <thead>
             <tr>
-              <th>Booking ID</th>
               <th>Name</th>
               <th>Email</th>
               <th>Service Name</th>
               <th>Price</th>
-              <th>Booing Date</th>
+              <th>Booking Date</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody className="text-sm">
             {bookings.map((booking) => (
               <tr key={booking._id}>
-                <td>{booking._id}</td>
                 <td>{booking.name}</td>
                 <td>{booking.email}</td>
                 <td>{booking.serviceName}</td>

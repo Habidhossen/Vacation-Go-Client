@@ -7,7 +7,7 @@ import auth from "../../../Firebase/firebase.init";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
-  const [admin] = useState(true); //from admin hook
+  const [admin] = useState(false); //from admin hook
 
   return (
     <div className="drawer drawer-mobile">
@@ -60,10 +60,14 @@ const Dashboard = () => {
           ) : (
             <>
               <li>
-                <Link to="add-review">Add a Review</Link>
+                <Link to="booking" className="nav-link">
+                  My Bookings
+                </Link>
               </li>
               <li>
-                <Link to="">My Services</Link>
+                <Link to="add-review" className="nav-link">
+                  Add a Review
+                </Link>
               </li>
             </>
           )}
