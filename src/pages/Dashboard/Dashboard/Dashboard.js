@@ -51,11 +51,6 @@ const Dashboard = () => {
                   Manage all Bookings
                 </NavLink>
               </li>
-              <li>
-                <NavLink className="nav-link" to="users">
-                  All Users
-                </NavLink>
-              </li>
             </>
           ) : (
             <>
