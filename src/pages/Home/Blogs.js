@@ -1,5 +1,6 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 import "../../assets/styles/style.css";
 import Loader from "../Shared/Loader/Loader";
 import Blog from "./Blog";
@@ -34,9 +35,9 @@ const Blogs = () => {
       </div>
 
       <div className="flex justify-end mt-6">
-        <button className="section-footer-btn">
+        <Link to="/blogs" className="section-footer-btn">
           See All Blogs <FaLongArrowAltRight />
-        </button>
+        </Link>
       </div>
     </section>
   );

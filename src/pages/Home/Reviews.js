@@ -1,6 +1,7 @@
 // Import Swiper React components
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -65,9 +66,9 @@ const Reviews = () => {
       </>
 
       <div className="flex justify-end mt-6">
-        <button className="section-footer-btn">
+        <Link to="/reviews" className="section-footer-btn">
           See All Reviews <FaLongArrowAltRight />
-        </button>
+        </Link>
       </div>
     </section>
   );

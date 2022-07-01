@@ -1,4 +1,6 @@
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 import "../../assets/styles/style.css";
 import Loader from "../Shared/Loader/Loader";
 import Service from "./Service";
@@ -30,6 +32,12 @@ const Services = () => {
         {services
           .map((service) => <Service key={service._id} service={service} />)
           .reverse()}
+      </div>
+
+      <div className="flex justify-end mt-6">
+        <Link to="/services" className="section-footer-btn">
+          See All Services <FaLongArrowAltRight />
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import AllBlogs from "./pages/AllBlogs/AllBlogs";
+import AllReviews from "./pages/AllReviews/AllReviews";
+import AllServices from "./pages/AllServices/AllServices";
 import AddBlog from "./pages/Dashboard/AddBlog/AddBlog";
 import AddReview from "./pages/Dashboard/AddReview/AddReview";
 import AddService from "./pages/Dashboard/AddService/AddService";
@@ -22,6 +25,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/services" element={<AllServices />} />
+        <Route path="/blogs" element={<AllBlogs />} />
+        <Route path="/reviews" element={<AllReviews />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route
