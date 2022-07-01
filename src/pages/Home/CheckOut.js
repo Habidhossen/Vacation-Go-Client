@@ -10,6 +10,7 @@ const CheckOut = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
   const { serviceID } = useParams(); // get productId from params
 
+  // booking service data send to the server
   const {
     register,
     formState: { errors },
@@ -19,8 +20,10 @@ const CheckOut = () => {
 
   // submit button
   const onSubmit = (bookingService) => {
+    console.log(bookingService);
+
     // send data to the server
-    fetch("", {
+    fetch("http://localhost:5000/booking", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -36,12 +39,8 @@ const CheckOut = () => {
     reset();
   };
 
-  // fetch data from database using react query
-  const {
-    data: service,
-    isLoading,
-    refetch,
-  } = useQuery("service", () =>
+  // fetch data from database using react query (Service)
+  const { data: service, isLoading } = useQuery("service", () =>
     fetch(`http://localhost:5000/service/${serviceID}`).then((res) =>
       res.json()
     )
@@ -152,11 +151,11 @@ const CheckOut = () => {
                 <input
                   type="date"
                   className="input input-bordered"
-                  {...register("email", { required: true })}
+                  {...register("date", { required: true })}
                 />
-                {errors.email && (
+                {errors.date && (
                   <span className="label-text-alt text-red-500 mt-2">
-                    Email is Required!
+                    Booking date is Required!
                   </span>
                 )}
               </div>
