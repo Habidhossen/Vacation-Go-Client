@@ -28,7 +28,7 @@ const ManageService = () => {
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount) {
-            toast.success(`Product deleted successfully`, {
+            toast.success("Product deleted successfully", {
               theme: "colored",
               autoClose: 2000,
             });
@@ -40,36 +40,34 @@ const ManageService = () => {
 
   return (
     <div>
-      <div>
-        <div className="overflow-x-auto p-4">
-          <h1 className="text-xl text-primary font-semibold mb-4">
-            All Services ({services.length})
-          </h1>
-          <table className="table w-full">
-            <thead>
-              <tr>
-                <th>Product ID</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
+      <div className="overflow-x-auto p-4">
+        <h1 className="text-xl text-primary font-semibold mb-4">
+          All Services ({services.length})
+        </h1>
+        <table className="table w-full">
+          <thead>
+            <tr>
+              <th>Product ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody className="text-sm">
+            {services.map((service) => (
+              <tr key={service._id}>
+                <td>{service._id}</td>
+                <td>{service.name}</td>
+                <td>${service.price}</td>
+                <td>
+                  <button onClick={() => handleServiceDelete(service._id)}>
+                    <FiTrash2 className="text-red-500" />
+                  </button>
+                </td>
               </tr>
-            </thead>
-            <tbody className="text-sm">
-              {services.map((service) => (
-                <tr key={service._id}>
-                  <td>{service._id}</td>
-                  <td>{service.name}</td>
-                  <td>${service.price}</td>
-                  <td>
-                    <button onClick={() => handleServiceDelete(service._id)}>
-                      <FiTrash2 className="text-red-500" />
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
