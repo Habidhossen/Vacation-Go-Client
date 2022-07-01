@@ -42,11 +42,6 @@ const Navbar = () => {
           About
         </NavLink>
       </li>
-      <li>
-        <NavLink className="nav-link" to="/contact">
-          Contact
-        </NavLink>
-      </li>
     </>
   );
   return (

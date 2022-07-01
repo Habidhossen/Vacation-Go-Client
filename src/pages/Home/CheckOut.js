@@ -32,7 +32,7 @@ const CheckOut = () => {
     })
       .then((response) => response.json())
       .then((data) => data);
-    toast.success("Booking is Successful", {
+    toast.success("Booking is Successful. Go to Dashboard.", {
       theme: "colored",
       autoClose: 2000,
     });
@@ -65,10 +65,10 @@ const CheckOut = () => {
               </div>
               <p className="text-sm mt-8">ID: {service._id}</p>
               <p className="text-lg">
-                Service: <b>{service.name}</b>
+                Service: <b className="text-primary">{service.name}</b>
               </p>
               <p>
-                Price: <b>${service.price}</b>
+                Price: <b className="text-primary">${service.price}</b>
               </p>
               <p>Description: {service.desc}</p>
             </div>
