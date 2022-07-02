@@ -29,9 +29,10 @@ const Blogs = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        {blogs.slice(0, 2).map((blog) => (
-          <Blog key={blog._id} blog={blog} />
-        ))}
+        {blogs
+          .slice(0, 2)
+          .map((blog) => <Blog key={blog._id} blog={blog} />)
+          .reverse()}
       </div>
 
       <div className="flex justify-end mt-6">
