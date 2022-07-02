@@ -1,13 +1,13 @@
-import { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../../Firebase/firebase.init";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
-  const [admin] = useState(user); //from admin hook
+  const [admin] = useAdmin(user); //from admin hook
 
   return (
     <div className="drawer drawer-mobile">
