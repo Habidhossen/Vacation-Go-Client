@@ -29,7 +29,7 @@ const Blogs = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        {blogs.map((blog) => (
+        {blogs.slice(0, 2).map((blog) => (
           <Blog key={blog._id} blog={blog} />
         ))}
       </div>

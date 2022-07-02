@@ -30,6 +30,7 @@ const Services = () => {
 
       <div className="grid grid-cols-4 gap-6">
         {services
+          .slice(0, 4)
           .map((service) => <Service key={service._id} service={service} />)
           .reverse()}
       </div>

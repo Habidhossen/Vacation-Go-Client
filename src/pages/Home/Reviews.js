@@ -32,38 +32,37 @@ const Reviews = () => {
         </div>
         <div className="section-title-bar"></div>
       </div>
-      <>
-        <Swiper
-          effect={"coverflow"}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={"3"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-          }}
-          modules={[Autoplay, EffectCoverflow, Pagination]}
-          className="mySwiper pb-16"
-        >
-          {reviews
-            .map((review) => (
-              <SwiperSlide>
-                <Review key={review._id} review={review} />
-              </SwiperSlide>
-            ))
-            .reverse()}
-        </Swiper>
-      </>
+
+      <Swiper
+        effect={"coverflow"}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"3"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        modules={[Autoplay, EffectCoverflow, Pagination]}
+        className="mySwiper pb-16"
+      >
+        {reviews
+          .map((review) => (
+            <SwiperSlide>
+              <Review key={review._id} review={review} />
+            </SwiperSlide>
+          ))
+          .reverse()}
+      </Swiper>
 
       <div className="flex justify-end mt-6">
         <Link to="/reviews" className="section-footer-btn">

@@ -95,17 +95,20 @@ const Navbar = () => {
           </svg>
         </label>
       </div>
-      <div class="navbar-end">
+      <div className="navbar-end">
         {user ? (
           // <button onClick={logout} className="text-error">
           //   LOGOUT
           // </button>
 
-          <div class="dropdown dropdown-hover dropdown-end">
-            <label tabindex="0" class="flex items-center gap-3 text-primary">
+          <div className="dropdown dropdown-hover dropdown-end">
+            <label
+              tabindex="0"
+              className="flex items-center gap-3 text-primary"
+            >
               {user.displayName}
-              <div class="avatar">
-                <div class="w-8 rounded-full ring-1 ring-primary ring-offset-base-100 ring-offset-2">
+              <div className="avatar">
+                <div className="w-8 rounded-full ring-1 ring-primary ring-offset-base-100 ring-offset-2">
                   {user.photoURL !== null ? (
                     <img src={user.photoURL} />
                   ) : (
@@ -116,7 +119,7 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+              className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
                 <Link to="dashboard" className="text-center mb-2">

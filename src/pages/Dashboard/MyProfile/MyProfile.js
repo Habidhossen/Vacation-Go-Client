@@ -9,8 +9,8 @@ const MyProfile = () => {
       <div className="card w-96 mx-auto shadow-sm bg-base-100 mt-4">
         <div className="card-body flex items-center text-center">
           <h1 className="text-center text-xl font-semibold mb-4">My Profile</h1>
-          <div class="avatar">
-            <div class="w-28 rounded-full ring-2 ring-primary ring-offset-base-100 ring-offset-2">
+          <div className="avatar">
+            <div className="w-28 rounded-full ring-2 ring-primary ring-offset-base-100 ring-offset-2">
               {user.photoURL !== null ? (
                 <img src={user.photoURL} />
               ) : (
