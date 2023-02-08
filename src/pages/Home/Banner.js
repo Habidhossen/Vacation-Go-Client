@@ -34,7 +34,7 @@ const Banner = () => {
         <SwiperSlide
           className="min-h-screen flex items-center"
           style={{
-            background: `linear-gradient(to right, white, transparent), url(${banner1})`,
+            background: `linear-gradient(to right, black, transparent), url(${banner1})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -42,11 +42,11 @@ const Banner = () => {
           }}
         >
           <div className="flex flex-col justify-start items-start px-20">
-            <h1 className="text-6xl font-bold leading-snug uppercase">
+            <h1 className="text-6xl font-bold leading-snug uppercase text-white">
               Let's <span className="text-[#fc5b62]">Discover</span> <br />
               The World Together!
             </h1>
-            <p className="mt-6 mb-8 w-1/2">
+            <p className="mt-6 mb-8 w-1/2 text-white">
               Life is short and the world is wide. Explore a new world with a
               friendly guide, who takes care of your adventure trip. So let's
               go.
@@ -57,7 +57,7 @@ const Banner = () => {
         <SwiperSlide
           className="min-h-screen flex items-center"
           style={{
-            background: `linear-gradient(to right, white, transparent), url(${banner2})`,
+            background: `linear-gradient(to right, black, transparent), url(${banner2})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -65,11 +65,11 @@ const Banner = () => {
           }}
         >
           <div className="flex flex-col justify-start items-start px-20">
-            <h1 className="text-6xl font-bold leading-snug uppercase">
+            <h1 className="text-6xl font-bold leading-snug uppercase text-white">
               Your Perfect <br />
               <span className="text-[#fc5b62]">Adventure</span> Experience!
             </h1>
-            <p className="mt-6 mb-8 w-1/2">
+            <p className="mt-6 mb-8 w-1/2 text-white">
               Life is short and the world is wide. Explore a new world with a
               friendly guide, who takes care of your adventure trip. So let's
               go.
@@ -80,7 +80,7 @@ const Banner = () => {
         <SwiperSlide
           className="min-h-screen flex items-center"
           style={{
-            background: `linear-gradient(to right, white, transparent), url(${banner3})`,
+            background: `linear-gradient(to right, black, transparent), url(${banner3})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
@@ -88,11 +88,11 @@ const Banner = () => {
           }}
         >
           <div className="flex flex-col justify-start items-start px-20">
-            <h1 className="text-6xl font-bold leading-snug uppercase">
+            <h1 className="text-6xl font-bold leading-snug uppercase text-white">
               Book Your <br />
               <span className="text-[#fc5b62]">Travel</span> Now!
             </h1>
-            <p className="mt-6 mb-8 w-1/2">
+            <p className="mt-6 mb-8 w-1/2 text-white">
               Book unique experiences and explore top rated tours. Hopefully it
               will be your best ever tour. So let's go.
             </p>
