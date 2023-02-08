@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mulish:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,15 +7,18 @@
 }
 
 body {
-  font-family: "Cinzel Decorative", cursive;
-  font-family: "Poppins", sans-serif;
+  font-family: "Fredoka One", cursive;
+  font-family: "Mulish", sans-serif;
   background-color: var(--greyBg);
 }
 
 :root {
-  --color-primary: #fc5b62;
+  /* --color-primary: #fc5b62; */
+  --color-primary: #41c3e5;
+  --color-secondary: #fcc845;
   --heading: #0f172a;
   --text: #4e4c55;
   --greyBg: #f7f7f7;
-  --blue: #5b6bff;
+  --blue: #4e3bf0;
+  --purple: #803bf0;
 }
