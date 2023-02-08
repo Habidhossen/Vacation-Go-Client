@@ -13,7 +13,8 @@ body {
 }
 
 :root {
-  /* --color-primary: #fc5b62; */
+  --font-Fredoka: "Fredoka One", cursive;
+  --font-Mulish: "Mulish", sans-serif;
   --color-primary: #41c3e5;
   --color-secondary: #ff7e4c;
   --heading: #2a445f;

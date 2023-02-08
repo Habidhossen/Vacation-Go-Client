@@ -23,15 +23,14 @@
 
 /* Customize the Navigation-bar */
 .nav-brand {
-  font-family: "Cinzel Decorative", cursive;
+  font-family: var(--font-Fredoka);
   font-size: 24px;
-  font-weight: 700;
   color: var(--color-primary);
 }
 .nav-link {
+  font-family: var(--font-Fredoka);
   font-size: 16px;
-  font-weight: 500;
-  color: black !important;
+  color: var(--heading) !important;
   background-color: transparent !important;
 }
 .nav-link:focus {
@@ -167,4 +166,21 @@
 }
 .blog-card-btn {
   color: var(--color-primary);
+}
+
+/* Some Buttons */
+.custom-primary-btn {
+  font-family: var(--font-Fredoka);
+  background: linear-gradient(to right, #41c3e5 0%, #6f86d6 100%);
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.custom-primary-btn:hover {
+  background: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);
+  transition: 0.8s;
 }

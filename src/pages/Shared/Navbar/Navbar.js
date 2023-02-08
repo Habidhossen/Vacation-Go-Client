@@ -137,7 +137,7 @@ const Navbar = () => {
             </ul>
           </div>
         ) : (
-          <NavLink className="nav-link" to="/login">
+          <NavLink className="custom-primary-btn" to="/login">
             Login
           </NavLink>
         )}

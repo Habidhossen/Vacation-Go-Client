@@ -3,13 +3,17 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
+    fontFamily: {
+      fredoka: ["Fredoka One", "cursive"],
+      mulish: ["Mulish", "sans-serif"],
+    },
   },
   daisyui: {
     themes: [
       {
         primaryTheme: {
-          primary: "#fc5b62",
-          secondary: "#1d4684",
+          primary: "#41c3e5",
+          secondary: "#ff7e4c",
           accent: "#43aee1",
           neutral: "#172b34",
           info: "#0dcaf0",
