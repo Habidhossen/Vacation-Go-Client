@@ -9,16 +9,19 @@
 body {
   font-family: "Fredoka One", cursive;
   font-family: "Mulish", sans-serif;
-  background-color: var(--greyBg);
+  background-color: var(--light-grey);
 }
 
 :root {
   /* --color-primary: #fc5b62; */
   --color-primary: #41c3e5;
-  --color-secondary: #fcc845;
-  --heading: #0f172a;
+  --color-secondary: #ff7e4c;
+  --heading: #2a445f;
   --text: #4e4c55;
-  --greyBg: #f7f7f7;
   --blue: #4e3bf0;
   --purple: #803bf0;
+  --yellow: #fcc845;
+  --light-grey: #fafafa;
+  --light-blue: #eaf6f6;
+  --light-orange: #feead1;
 }

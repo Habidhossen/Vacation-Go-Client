@@ -24,14 +24,15 @@
 /* Customize the Navigation-bar */
 .nav-brand {
   font-family: "Cinzel Decorative", cursive;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--color-primary);
 }
 .nav-link {
+  font-size: 16px;
+  font-weight: 500;
   color: black !important;
   background-color: transparent !important;
-  text-transform: uppercase;
 }
 .nav-link:focus {
   color: var(--color-primary) !important;
