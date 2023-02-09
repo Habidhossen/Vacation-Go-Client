@@ -5,11 +5,7 @@ const Summary = () => {
     <section className="px-20 py-28 bg-[#eaf6f6]">
       <div className="grid grid-cols-2 gap-4">
         <div className="relative">
-          <img
-            className="p-4"
-            src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg"
-            alt=""
-          />
+          <img className="p-4" src="" alt="" />
           {/* small part */}
           <div className="absolute top-10 right-0 flex justify-center w-56 bg-white rounded-xl py-3">
             <div className="avatar-group -space-x-6">
