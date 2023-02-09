@@ -104,7 +104,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-hover dropdown-end">
             <label
               tabindex="0"
-              className="flex items-center gap-3 text-primary"
+              className="flex items-center gap-3 font-fredoka text-primary"
             >
               {user.displayName}
               <div className="avatar">
@@ -129,7 +129,7 @@ const Navbar = () => {
               <li>
                 <button
                   onClick={logout}
-                  className="text-white font-semibold text-sm flex justify-center bg-primary hover:bg-rose-600"
+                  className="text-white font-semibold text-sm flex justify-center bg-error hover:bg-rose-600"
                 >
                   LOGOUT <HiOutlineLogout />
                 </button>
