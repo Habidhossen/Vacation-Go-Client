@@ -10,6 +10,30 @@ const Summary = () => {
             src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg"
             alt=""
           />
+          {/* small part */}
+          <div className="flex justify-center w-56 bg-white rounded-xl py-3">
+            <div className="avatar-group -space-x-6">
+              <div className="avatar">
+                <div className="w-10">
+                  <img src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg" />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="w-10">
+                  <img src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg" />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="w-10">
+                  <img src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg" />
+                </div>
+              </div>
+            </div>
+            <div className="font-fredoka">
+              <h5 className="text-base text-primary">125k+</h5>
+              <p className="text-xs">Satisfied Clients</p>
+            </div>
+          </div>
         </div>
         <div>
           <h1 className="font-fredoka text-5xl leading-tight  mb-4">
