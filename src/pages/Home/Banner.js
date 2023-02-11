@@ -18,19 +18,19 @@ const bannerData = [
     bgImg: banner1,
     titleSpan: "Let's Discover",
     title: "The World Together!",
-    desc: "Life is short and the world is wide. Explore a new world with a friendly guide, who takes care of your adventure trip. So let's go",
+    desc: "Traveling is a way to expand your horizons and experience new cultures, landscapes, and ways of life. It provides an escape from the routine and offers opportunities for personal growth and discovery.",
   },
   {
     bgImg: banner2,
     titleSpan: "Your Perfect",
     title: "Adventure Experience.",
-    desc: "Book unique experiences and explore top rated tours. Hopefully it will be your best ever tour. So let's go.",
+    desc: "Touring with a professional guide enhances your travel experience by providing insider knowledge and customized itineraries that maximize your time and enjoyment. From visiting iconic landmarks to exploring hidden gems, touring is a sure way to create lasting memories.",
   },
   {
     bgImg: banner3,
     titleSpan: "Hey! Confirm",
     title: "Your Travel Now.",
-    desc: "Life is short and the world is wide. Explore a new world with a friendly guide, who takes care of your adventure trip. So let's go",
+    desc: "Travel and tours offer something for everyone, from relaxed vacations to action-packed adventures. So, whether you're a seasoned traveler or just starting out, book your next trip today and embrace the wonders of the world.",
   },
 ];
 

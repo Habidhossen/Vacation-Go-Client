@@ -33,26 +33,31 @@ const Summary = () => {
         </div>
         <div>
           <h1 className="font-fredoka text-5xl leading-tight  mb-4">
-            Professional vest care and guaranteed quality
+            Guaranteed quality tour guide services
           </h1>
-          <p className="text-xl  mb-4">
-            Lorem ipsum dolor sit amet consectetur. Sed eros turpis et convallis
-            egestas turpis. Id nibh amet consectetur enim integer accumsan
-            cursus urna. Odio lacus aenean pellente.
+          <p className="text-lg  mb-4">
+            As a professional individual tour guide, I am committed to providing
+            you with the highest quality travel experiences. With my extensive
+            knowledge and experience, I can offer you a personalized and
+            intimate tour that is tailored to your specific needs and interests.
           </p>
           <hr />
           <div className="my-6 flex-row ">
             <p className="flex items-center gap-4 text-lg">
-              <FaCheckCircle className="text-secondary" /> Lorem ipsum dolor sit
-              amet consectetur.
+              <FaCheckCircle className="text-secondary" /> Professional tour
+              guide services
             </p>
             <p className="flex items-center gap-4 text-lg">
-              <FaCheckCircle className="text-secondary" /> Lorem ipsum dolor sit
-              amet consectetur.
+              <FaCheckCircle className="text-secondary" /> Experienced and
+              knowledgeable guides
             </p>
             <p className="flex items-center gap-4 text-lg">
-              <FaCheckCircle className="text-secondary" /> Lorem ipsum dolor sit
-              amet consectetur.
+              <FaCheckCircle className="text-secondary" /> Guides with you every
+              step of the way
+            </p>
+            <p className="flex items-center gap-4 text-lg">
+              <FaCheckCircle className="text-secondary" /> Focus on
+              professionalism and quality
             </p>
           </div>
           <button className="custom-primary-btn">Explore More</button>

@@ -44,7 +44,7 @@ const Review = ({ review }) => {
           )}
         </div>
         <div>
-          <p>{rating}</p>
+          <p>{rating} star</p>
         </div>
       </div>
       <p className="review-card-text">&#8220; {msg} &#8221;</p>
