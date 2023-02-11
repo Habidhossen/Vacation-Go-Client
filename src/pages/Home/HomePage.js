@@ -4,6 +4,7 @@ import Blogs from "./Blogs";
 import Reviews from "./Reviews";
 import Services from "./Services";
 import SpecialPart from "./SpecialPart";
+import SubscribeNews from "./SubscribeNews";
 import Summary from "./Summary";
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Reviews />
       <Summary />
       <Blogs />
+      <SubscribeNews />
       {/* <Contact /> */}
       <Footer />
     </div>
