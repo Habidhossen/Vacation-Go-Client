@@ -59,52 +59,6 @@
   width: 50px;
 }
 
-/* Service Card Style */
-.service-card {
-  background-color: white;
-  padding: 14px 12px;
-  border-radius: 8px;
-}
-.service-card-img {
-  border-radius: 8px;
-  width: 100%;
-}
-.service-card-title {
-  margin-top: 10px;
-  font-family: "Cinzel Decorative", cursive;
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--heading);
-}
-.service-card-text {
-  margin: 14px 0;
-  font-size: 14px;
-  color: var(--text);
-}
-.service-card-price {
-  margin-top: 8px;
-  font-family: "Cinzel Decorative", cursive;
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--color-primary);
-}
-.checkout-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  background-color: var(--color-primary);
-  color: white;
-  font-size: 14px;
-  border-radius: 50px;
-  padding: 8px 20px;
-  transition: 0.3s;
-}
-.checkout-btn:hover {
-  background-color: crimson;
-}
-
 /* Review Card Styles */
 .review-card {
   height: 100%;
