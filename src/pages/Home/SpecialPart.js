@@ -1,5 +1,4 @@
 // Import images
-import specialBannerBg from "../../assets/images/special-banner-bg.png";
 
 // Import React-Icon
 import { BsFillStarFill } from "react-icons/bs";
@@ -9,9 +8,9 @@ const SpecialPart = () => {
     <section
       className="min-h-screen flex justify-center"
       style={{
-        background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${specialBannerBg}`,
+        background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.shopify.com/s/files/1/0626/5543/0870/files/img_06_004551d2-23c5-42b5-9aad-e26700b46fd5_1512x.png?v=1642492852`,
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
+        // backgroundAttachment: "fixed",
         backgroundPosition: "center",
         backgroundSize: "cover",
         minHeight: "600px",
@@ -21,16 +20,19 @@ const SpecialPart = () => {
         <h1 className="text-2xl text-white font-medium uppercase">
           Holiday Package Offer
         </h1>
-        <div className="flex gap-3 text-2xl text-amber-500">
+        <div className="flex gap-3 text-2xl text-secondary">
           <BsFillStarFill />
           <BsFillStarFill />
           <BsFillStarFill />
           <BsFillStarFill />
           <BsFillStarFill />
         </div>
-        <h3 className="text-5xl text-white font-semibold uppercase">
-          HOLIDAY SPECIAL 25% OFF !
+        <h3 className="font-fredoka text-6xl text-white ">
+          Holiday Special 25% Off!
         </h3>
+        <button class="bg-secondary text-white font-semibold hover:bg-transparent hover:text-secondary py-4 px-8 border border-secondary hover:border-secondary rounded-full">
+          Booking now
+        </button>
       </div>
     </section>
   );
