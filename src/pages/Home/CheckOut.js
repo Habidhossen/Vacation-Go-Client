@@ -52,120 +52,109 @@ const CheckOut = () => {
   }
 
   return (
-    <div className="grid grid-cols-2 px-12">
-      <div>
-        <div className="p-8">
-          <div className="card shadow-sm bg-base-100">
-            <div className="card-body">
-              <h1 className="text-center text-xl font-bold mb-4">
-                Selected Service
-              </h1>
-              <div className="flex justify-center">
-                <img className="w-72 rounded-md" src={service.imgURL} alt="" />
-              </div>
-              <p className="text-sm mt-8">ID: {service._id}</p>
-              <p className="text-lg">
-                Service: <b className="text-primary">{service.name}</b>
-              </p>
-              <p>
-                Price: <b className="text-primary">${service.price}</b>
-              </p>
-              <p>Description: {service.desc}</p>
-            </div>
-          </div>
+    <div className="grid grid-cols-1 gap-y-8 mt-10 px-36">
+      <div className="grid grid-cols-2 items-center bg-white rounded-md">
+        <div className="">
+          <img className="w-full rounded-md" src={service.imgURL} alt="" />
+        </div>
+        <div className="mx-4 flex flex-col gap-y-3">
+          <p className="">ID: {service._id}</p>
+          <p className="">
+            Service: <b className="text-secondary">{service.name}</b>
+          </p>
+          <p>
+            Price: <b className="text-secondary">${service.price}</b>
+          </p>
+          <p>Description: {service.desc}</p>
         </div>
       </div>
-      <div className="p-8">
-        <div className="card shadow-sm bg-base-100">
-          <div className="card-body">
-            <h1 className="text-center text-xl font-bold mb-4">
-              Confirm Your Booking
-            </h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Service Name</span>
-                </label>
-                <input
-                  value={service.name}
-                  className="input input-bordered"
-                  {...register("serviceName", { required: true })}
-                />
-                {errors.serviceName && (
-                  <span className="label-text-alt text-red-500 mt-2">
-                    Service Name is Required!
-                  </span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">$Price</span>
-                </label>
-                <input
-                  value={service.price}
-                  className="input input-bordered"
-                  {...register("price", { required: true })}
-                />
-                {errors.price && (
-                  <span className="label-text-alt text-red-500 mt-2">
-                    Price is Required!
-                  </span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Your Name</span>
-                </label>
-                <input
-                  type="text"
-                  defaultValue={user?.displayName}
-                  className="input input-bordered"
-                  {...register("name", { required: true })}
-                />
-                {errors.name && (
-                  <span className="label-text-alt text-red-500 mt-2">
-                    Name is Required!
-                  </span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="text"
-                  value={user?.email}
-                  className="input input-bordered"
-                  {...register("email", { required: true })}
-                />
-                {errors.email && (
-                  <span className="label-text-alt text-red-500 mt-2">
-                    Email is Required!
-                  </span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Booking Date</span>
-                </label>
-                <input
-                  type="date"
-                  className="input input-bordered"
-                  {...register("date", { required: true })}
-                />
-                {errors.date && (
-                  <span className="label-text-alt text-red-500 mt-2">
-                    Booking date is Required!
-                  </span>
-                )}
-              </div>
-              <div className="form-control mt-6">
-                <button className="btn btn-primary text-white">
-                  Confirm Booking
-                </button>
-              </div>
-            </form>
-          </div>
+      <div className="card shadow-sm bg-white">
+        <div className="card-body">
+          <h1 className="text-center text-xl font-bold mb-4">
+            Confirm Your Booking
+          </h1>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Service Name</span>
+              </label>
+              <input
+                value={service.name}
+                className="input input-bordered"
+                {...register("serviceName", { required: true })}
+              />
+              {errors.serviceName && (
+                <span className="label-text-alt text-red-500 mt-2">
+                  Service Name is Required!
+                </span>
+              )}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">$Price</span>
+              </label>
+              <input
+                value={service.price}
+                className="input input-bordered"
+                {...register("price", { required: true })}
+              />
+              {errors.price && (
+                <span className="label-text-alt text-red-500 mt-2">
+                  Price is Required!
+                </span>
+              )}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Your Name</span>
+              </label>
+              <input
+                type="text"
+                defaultValue={user?.displayName}
+                className="input input-bordered"
+                {...register("name", { required: true })}
+              />
+              {errors.name && (
+                <span className="label-text-alt text-red-500 mt-2">
+                  Name is Required!
+                </span>
+              )}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
+                type="text"
+                value={user?.email}
+                className="input input-bordered"
+                {...register("email", { required: true })}
+              />
+              {errors.email && (
+                <span className="label-text-alt text-red-500 mt-2">
+                  Email is Required!
+                </span>
+              )}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Booking Date</span>
+              </label>
+              <input
+                type="date"
+                className="input input-bordered"
+                {...register("date", { required: true })}
+              />
+              {errors.date && (
+                <span className="label-text-alt text-red-500 mt-2">
+                  Booking date is Required!
+                </span>
+              )}
+            </div>
+            <div className="form-control mt-6">
+              <button className="custom-primary-btn">Confirm Booking</button>
+            </div>
+          </form>
         </div>
       </div>
       <ToastContainer />
