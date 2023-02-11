@@ -1,16 +1,22 @@
+import { FaLongArrowAltRight, FaRegCalendar } from "react-icons/fa";
 import "../../assets/styles/style.css";
 
 const Blog = ({ blog }) => {
   const { imgURL, date, title, desc } = blog;
 
   return (
-    <div className="blog-card">
-      <img className="blog-card-img" src={imgURL} alt="" />
+    <div className="flex gap-6 items-center px-16">
+      <img className="w-96 rounded-md" src={imgURL} alt="" />
       <div>
-        <p className="blog-card-date">{date}</p>
-        <h1 className="blog-card-title">{title}</h1>
-        <p className="blog-card-desc">{desc}</p>
-        <button className="blog-card-btn">Read more...</button>
+        <p className="flex items-center gap-2 text-sm italic mb-1">
+          <FaRegCalendar className="text-secondary" />
+          {date}
+        </p>
+        <h1 className="font-fredoka text-xl">{title}</h1>
+        <p className="py-4">{desc.slice(0, 200) + "..."}</p>
+        <button className="flex items-center gap-2 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300">
+          Read more <FaLongArrowAltRight />
+        </button>
       </div>
     </div>
   );

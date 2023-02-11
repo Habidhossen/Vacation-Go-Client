@@ -28,7 +28,7 @@ const Blogs = () => {
         <div className="section-title-bar"></div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-y-8">
         {blogs
           .slice(0, 2)
           .map((blog) => <Blog key={blog._id} blog={blog} />)
