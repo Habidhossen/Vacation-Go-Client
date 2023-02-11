@@ -28,9 +28,9 @@ const Services = () => {
         <div className="section-title-bar"></div>
       </div>
 
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-3 gap-6">
         {services
-          .slice(0, 4)
+          .slice(0, 3)
           .map((service) => <Service key={service._id} service={service} />)
           .reverse()}
       </div>

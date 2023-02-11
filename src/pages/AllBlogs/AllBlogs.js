@@ -14,7 +14,7 @@ const AllBlogs = () => {
   }
   return (
     <div className="px-20 py-8">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-y-8">
         {blogs.map((blog) => (
           <Blog key={blog._id} blog={blog} />
         ))}
