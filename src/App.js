@@ -13,6 +13,7 @@ import ManageBooking from "./pages/Dashboard/ManageBooking/ManageBooking";
 import ManageService from "./pages/Dashboard/ManageService/ManageService";
 import MyBooking from "./pages/Dashboard/MyBooking/MyBooking";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
+import BlogDetails from "./pages/Home/BlogDetails";
 import CheckOut from "./pages/Home/CheckOut";
 import HomePage from "./pages/Home/HomePage";
 import Login from "./pages/Login/Login/Login";
@@ -40,6 +41,7 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route path="/blog/:blogID" element={<BlogDetails />} />
         <Route
           path="/dashboard"
           element={

@@ -1,8 +1,10 @@
 import { FaLongArrowAltRight, FaRegCalendar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "../../assets/styles/style.css";
 
 const Blog = ({ blog }) => {
-  const { imgURL, date, title, desc } = blog;
+  console.log(blog);
+  const { _id, imgURL, date, title, desc } = blog;
 
   return (
     <div className="flex gap-6 items-center px-16">
@@ -14,9 +16,12 @@ const Blog = ({ blog }) => {
         </p>
         <h1 className="font-fredoka text-heading text-xl">{title}</h1>
         <p className="py-4 text-text">{desc.slice(0, 200) + "..."}</p>
-        <button className="flex items-center gap-2 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300">
+        <Link
+          to={`blog/${_id}`}
+          className="flex items-center gap-2 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300"
+        >
           Read more <FaLongArrowAltRight />
-        </button>
+        </Link>
       </div>
     </div>
   );

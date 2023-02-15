@@ -16,7 +16,7 @@ const Dashboard = () => {
       <div className="drawer-content bg-gray-50">
         <Outlet />
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side bg-white h-screen">
         <label htmlFor="side-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 sm:bg-transparent text-base-content">
           <li>
