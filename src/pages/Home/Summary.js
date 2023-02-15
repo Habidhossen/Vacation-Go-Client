@@ -1,27 +1,31 @@
 import { FaCheckCircle } from "react-icons/fa";
+import profileOne from "../../assets/images/profileOne.png";
+import profileThree from "../../assets/images/profileThree.png";
+import profileTwo from "../../assets/images/profileTwo.png";
+import travelersBg from "../../assets/images/travelersBg.svg";
 
 const Summary = () => {
   return (
     <section className="px-20 py-28 bg-[#eaf6f6]">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="relative">
-          <img className="p-4" src="" alt="" />
+          <img className="p-4" src={travelersBg} alt="" />
           {/* small part */}
-          <div className="absolute top-10 right-0 flex justify-center w-56 bg-white rounded-xl py-3">
-            <div className="avatar-group -space-x-6">
+          <div className="absolute top-20 left-0 flex justify-center w-52 bg-white rounded-xl py-3 px-0 cursor-pointer">
+            <div className="avatar-group -space-x-7">
               <div className="avatar">
                 <div className="w-10">
-                  <img src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg" />
+                  <img src={profileOne} />
                 </div>
               </div>
               <div className="avatar">
                 <div className="w-10">
-                  <img src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg" />
+                  <img src={profileTwo} />
                 </div>
               </div>
               <div className="avatar">
                 <div className="w-10">
-                  <img src="https://i.ibb.co/RSsFJNQ/bungee-jump-web-project.jpg" />
+                  <img src={profileThree} />
                 </div>
               </div>
             </div>
@@ -64,7 +68,7 @@ const Summary = () => {
         </div>
       </div>
 
-      <div className="flex justify-between mt-32 mx-16">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-32 mx-0">
         <div className="text-center">
           <h1 className="text-5xl font-fredoka text-text">25K+</h1>
           <h5 className="text-lg mt-2 text-heading">Happy Clients</h5>
