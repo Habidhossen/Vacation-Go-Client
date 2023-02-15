@@ -31,7 +31,7 @@ const SummaryPart = () => {
               </div>
             </div>
             <div className="font-fredoka">
-              <h5 className="text-base text-primary">125k+</h5>
+              <h5 className="text-base text-primary">25k+</h5>
               <p className="text-xs text-text">Satisfied Clients</p>
             </div>
           </div>
