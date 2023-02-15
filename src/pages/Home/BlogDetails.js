@@ -18,16 +18,16 @@ const BlogDetails = () => {
   }
 
   return (
-    <section>
-      <div className="flex gap-6 items-center px-16">
-        <img className="w-96 rounded-md" src={blog.imgURL} alt="" />
+    <section className="px-40 py-10">
+      <div>
+        <img className="w-full rounded-md mb-8" src={blog.imgURL} alt="" />
         <div>
+          <h1 className="font-fredoka text-heading text-3xl">{blog.title}</h1>
+          <p className="py-4 text-text">{blog.desc}</p>
           <p className="flex items-center gap-2 text-sm text-text italic mb-1">
             <FaRegCalendar className="text-secondary" />
             {blog.date}
           </p>
-          <h1 className="font-fredoka text-heading text-xl">{blog.title}</h1>
-          <p className="py-4 text-text">{blog.desc}</p>
         </div>
       </div>
     </section>
