@@ -36,7 +36,7 @@ const Services = () => {
       </div>
 
       <div className="flex justify-end mt-6">
-        <Link to="/services" className="section-footer-btn">
+        <Link to="/service" className="section-footer-btn">
           See All Services <FaLongArrowAltRight />
         </Link>
       </div>

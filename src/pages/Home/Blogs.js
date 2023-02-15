@@ -36,7 +36,7 @@ const Blogs = () => {
       </div>
 
       <div className="flex justify-end mt-6">
-        <Link to="/blogs" className="section-footer-btn">
+        <Link to="/blog" className="section-footer-btn">
           See All Blogs <FaLongArrowAltRight />
         </Link>
       </div>

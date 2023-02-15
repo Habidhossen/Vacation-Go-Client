@@ -27,9 +27,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/services" element={<AllServices />} />
-        <Route path="/blogs" element={<AllBlogs />} />
-        <Route path="/reviews" element={<AllReviews />} />
+        <Route path="/service" element={<AllServices />} />
+        <Route path="/blog" element={<AllBlogs />} />
+        <Route path="/review" element={<AllReviews />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

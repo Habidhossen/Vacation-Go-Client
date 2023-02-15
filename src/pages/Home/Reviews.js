@@ -65,7 +65,7 @@ const Reviews = () => {
       </Swiper>
 
       <div className="flex justify-end mt-6">
-        <Link to="/reviews" className="section-footer-btn">
+        <Link to="/review" className="section-footer-btn">
           See All Reviews <FaLongArrowAltRight />
         </Link>
       </div>

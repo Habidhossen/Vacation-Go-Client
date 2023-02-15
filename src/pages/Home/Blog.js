@@ -17,7 +17,7 @@ const Blog = ({ blog }) => {
         <h1 className="font-fredoka text-heading text-xl">{title}</h1>
         <p className="py-4 text-text">{desc.slice(0, 200) + "..."}</p>
         <Link
-          to={`blog/${_id}`}
+          to={`${_id}`}
           className="flex items-center gap-2 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300"
         >
           Read more <FaLongArrowAltRight />

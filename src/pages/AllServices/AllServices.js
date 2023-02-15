@@ -30,7 +30,7 @@ const AllServices = () => {
                   </span>
                 </p>
                 <Link
-                  to={`service/${service._id}`}
+                  to={`${service._id}`}
                   className="flex items-center gap-2 mt-14 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300"
                 >
                   Checkout <FaLongArrowAltRight />
