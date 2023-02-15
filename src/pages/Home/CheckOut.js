@@ -58,19 +58,19 @@ const CheckOut = () => {
           <img className="w-full rounded-md" src={service.imgURL} alt="" />
         </div>
         <div className="mx-4 flex flex-col gap-y-3">
-          <p className="">ID: {service._id}</p>
-          <p className="">
+          <p className="text-text">ID: {service._id}</p>
+          <p className="text-text">
             Service: <b className="text-secondary">{service.name}</b>
           </p>
-          <p>
+          <p className="text-text">
             Price: <b className="text-secondary">${service.price}</b>
           </p>
-          <p>Description: {service.desc}</p>
+          <p className="text-text">Description: {service.desc}</p>
         </div>
       </div>
       <div className="card shadow-sm bg-white">
         <div className="card-body">
-          <h1 className="text-center text-xl font-bold mb-4">
+          <h1 className="text-center text-heading text-xl font-bold mb-4">
             Confirm Your Booking
           </h1>
           <form onSubmit={handleSubmit(onSubmit)}>
