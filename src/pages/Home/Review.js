@@ -17,8 +17,8 @@ const Review = ({ review }) => {
   );
 
   return (
-    <div className="review-card">
-      <img className="review-card-img" src={profileImg} alt="" />
+    <div className="flex flex-col items-center text-center px-7 py-6 rounded-lg shadow-sm bg-white">
+      <img className="w-14 h-14 rounded-full" src={profileImg} alt="" />
       <div className="flex justify-between w-full py-4 px-6">
         <div>
           {rating === "1" && <span className="flex">{reviewIcon}</span>}
@@ -47,8 +47,8 @@ const Review = ({ review }) => {
           <p>{rating} star</p>
         </div>
       </div>
-      <p className="review-card-text">&#8220; {msg} &#8221;</p>
-      <h1 className="review-card-title">&#8212; {name}</h1>
+      <p className="text-sm text-text mb-3">&#8220; {msg} &#8221;</p>
+      <h1 className="font-bold text-sm text-heading">&#8212; {name}</h1>
     </div>
   );
 };
