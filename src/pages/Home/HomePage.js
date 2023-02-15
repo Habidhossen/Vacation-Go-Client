@@ -5,7 +5,7 @@ import Reviews from "./Reviews";
 import Services from "./Services";
 import SpecialPart from "./SpecialPart";
 import SubscribeNews from "./SubscribeNews";
-import Summary from "./Summary";
+import SummaryPart from "./SummaryPart";
 
 const HomePage = () => {
   return (
@@ -13,9 +13,9 @@ const HomePage = () => {
       <Banner />
       <Services />
       <SpecialPart />
-      <Reviews />
-      <Summary />
       <Blogs />
+      <SummaryPart />
+      <Reviews />
       <SubscribeNews />
       {/* <Contact /> */}
       <Footer />

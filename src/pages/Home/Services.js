@@ -18,7 +18,7 @@ const Services = () => {
 
   return (
     <section className="my-16 px-20">
-      <div className="flex justify-center items-center gap-3 mb-10">
+      <div className="flex justify-center items-center gap-3 mb-16">
         <div className="section-title-bar"></div>
         <div>
           <h1 className="section-title">

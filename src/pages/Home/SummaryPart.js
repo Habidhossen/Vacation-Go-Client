@@ -4,14 +4,15 @@ import profileThree from "../../assets/images/profileThree.png";
 import profileTwo from "../../assets/images/profileTwo.png";
 import travelersBg from "../../assets/images/travelersBg.svg";
 
-const Summary = () => {
+const SummaryPart = () => {
   return (
     <section className="px-20 py-28 bg-[#eaf6f6]">
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="relative">
           <img className="p-4" src={travelersBg} alt="" />
+
           {/* small part */}
-          <div className="absolute top-20 left-0 flex justify-center w-52 bg-white rounded-xl py-3 px-0 cursor-pointer">
+          <div className="absolute top-20 left-0 flex justify-center w-52 bg-white rounded-xl shadow-sm py-3 px-0 cursor-pointer">
             <div className="avatar-group -space-x-7">
               <div className="avatar">
                 <div className="w-10">
@@ -90,4 +91,4 @@ const Summary = () => {
   );
 };
 
-export default Summary;
+export default SummaryPart;
