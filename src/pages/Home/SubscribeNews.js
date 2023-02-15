@@ -3,11 +3,11 @@ import React from "react";
 const SubscribeNews = () => {
   return (
     <div className="flex flex-col items-center gap-y-7 mx-20 py-28 text-center bg-[#feead1] rounded-xl">
-      <h1 className="font-fredoka text-4xl leading-normal">
+      <h1 className="font-fredoka text-heading text-4xl leading-normal">
         Get latest News and <br />
         Special offers!
       </h1>
-      <p>
+      <p className="text-text">
         Join for the latest news, including special offers, events,
         collaborations, and new arrivals.
       </p>

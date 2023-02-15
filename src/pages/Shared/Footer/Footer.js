@@ -64,15 +64,15 @@ const Footer = () => {
           <Link className="nav-brand" to="/">
             <span>Vacation</span> Go
           </Link>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1 text-text">
             <HiMail className="text-secondary" /> Help@support.com
           </p>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1 text-text">
             <HiPhone className="text-secondary" /> (+123) 456 7890
           </p>
         </div>
         <div>
-          <p>Copyright © {year} Vacation Go.</p>
+          <p className="text-text">Copyright © {year} Vacation Go.</p>
         </div>
       </div>
     </footer>
