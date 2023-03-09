@@ -71,8 +71,19 @@ const Footer = () => {
             <HiPhone className="text-secondary" /> (+123) 456 7890
           </p>
         </div>
-        <div>
+        <div className="text-center">
           <p className="text-text">Copyright © {year} Vacation Go.</p>
+          <p className="text-sm text-text mt-1">
+            Developed by{" "}
+            <a
+              className="text-primary"
+              href="https://habidhossen.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Habid Hossen
+            </a>
+          </p>{" "}
         </div>
       </div>
     </footer>
