@@ -23,7 +23,7 @@ const CheckOut = () => {
     console.log(bookingService);
 
     // send data to the server
-    fetch("http://localhost:5000/booking", {
+    fetch("http://localhost:5000/api/booking", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -40,32 +40,34 @@ const CheckOut = () => {
   };
 
   // fetch data from database using react query (Service)
-  const { data: service, isLoading } = useQuery("service", () =>
-    fetch(`http://localhost:5000/service/${serviceID}`).then((res) =>
+  const { data: service, isLoading } = useQuery("Service", () =>
+    fetch(`http://localhost:5000/api/service/${serviceID}`).then((res) =>
       res.json()
     )
   );
-
   // loading
   if (isLoading) {
     return <Loader />;
   }
 
+  // Destructuring service data
+  const { _id, name, img, price, desc } = service.data;
+
   return (
     <div className="grid grid-cols-1 gap-y-8 mt-10 px-36">
       <div className="grid grid-cols-2 items-center bg-white rounded-md">
         <div className="">
-          <img className="w-full rounded-md" src={service.imgURL} alt="" />
+          <img className="w-full rounded-md" src={img} alt="" />
         </div>
         <div className="mx-4 flex flex-col gap-y-3">
-          <p className="text-text">ID: {service._id}</p>
+          <p className="text-text">ID: {_id}</p>
           <p className="text-text">
-            Service: <b className="text-secondary">{service.name}</b>
+            Service: <b className="text-secondary">{name}</b>
           </p>
           <p className="text-text">
-            Price: <b className="text-secondary">${service.price}</b>
+            Price: <b className="text-secondary">${price}</b>
           </p>
-          <p className="text-text">Description: {service.desc}</p>
+          <p className="text-text">Description: {desc}</p>
         </div>
       </div>
       <div className="card shadow-sm bg-white">
@@ -79,7 +81,7 @@ const CheckOut = () => {
                 <span className="label-text">Service Name</span>
               </label>
               <input
-                value={service.name}
+                value={name}
                 className="input input-bordered"
                 {...register("serviceName", { required: true })}
               />
@@ -94,7 +96,7 @@ const CheckOut = () => {
                 <span className="label-text">$Price</span>
               </label>
               <input
-                value={service.price}
+                value={price}
                 className="input input-bordered"
                 {...register("price", { required: true })}
               />
@@ -112,9 +114,9 @@ const CheckOut = () => {
                 type="text"
                 defaultValue={user?.displayName}
                 className="input input-bordered"
-                {...register("name", { required: true })}
+                {...register("userName", { required: true })}
               />
-              {errors.name && (
+              {errors.userName && (
                 <span className="label-text-alt text-red-500 mt-2">
                   Name is Required!
                 </span>
@@ -128,9 +130,9 @@ const CheckOut = () => {
                 type="text"
                 value={user?.email}
                 className="input input-bordered"
-                {...register("email", { required: true })}
+                {...register("userEmail", { required: true })}
               />
-              {errors.email && (
+              {errors.userEmail && (
                 <span className="label-text-alt text-red-500 mt-2">
                   Email is Required!
                 </span>
@@ -143,9 +145,9 @@ const CheckOut = () => {
               <input
                 type="date"
                 className="input input-bordered"
-                {...register("date", { required: true })}
+                {...register("bookingDate", { required: true })}
               />
-              {errors.date && (
+              {errors.bookingDate && (
                 <span className="label-text-alt text-red-500 mt-2">
                   Booking date is Required!
                 </span>

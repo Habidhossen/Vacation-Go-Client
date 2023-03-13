@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "../../assets/styles/style.css";
 
 const Service = ({ service }) => {
-  const { _id, name, price, desc, imgURL } = service;
+  const { _id, name, price, img } = service;
 
   return (
     <div className="bg-white">
-      <img className="" src={imgURL} alt="" />
+      <img className="" src={img} alt="" />
       <div className="flex flex-col items-center p-4">
         <h1 className="text-lg text-heading font-semibold">{name}</h1>
         <p className="font-fredoka text-2xl text-primary mt-1">

@@ -13,7 +13,7 @@ import Review from "./Review";
 const Reviews = () => {
   // fetch data from database using react query
   const { data: reviews, isLoading } = useQuery("reviews", () =>
-    fetch("http://localhost:5000/review").then((res) => res.json())
+    fetch("http://localhost:5000/api/review").then((res) => res.json())
   );
 
   // loading
@@ -55,10 +55,10 @@ const Reviews = () => {
         modules={[Autoplay, EffectCoverflow, Pagination]}
         className="mySwiper pb-16"
       >
-        {reviews
+        {reviews.data
           .map((review) => (
-            <SwiperSlide>
-              <Review key={review._id} review={review} />
+            <SwiperSlide key={review._id}>
+              <Review review={review} />
             </SwiperSlide>
           ))
           .reverse()}

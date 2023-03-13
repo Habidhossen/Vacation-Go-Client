@@ -53,8 +53,9 @@ const Banner = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {bannerData.map((banner) => (
+        {bannerData.map((banner, index) => (
           <SwiperSlide
+            key={index}
             className="min-h-screen flex items-center"
             style={{
               background: `linear-gradient(to right, black, transparent), url(${banner.bgImg})`,

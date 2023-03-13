@@ -16,7 +16,7 @@ const MyBooking = () => {
     isLoading,
     refetch,
   } = useQuery("bookings", () =>
-    fetch(`http://localhost:5000/booking?email=${email}`).then((res) =>
+    fetch(`http://localhost:5000/api/booking?email=${email}`).then((res) =>
       res.json()
     )
   );
@@ -31,7 +31,7 @@ const MyBooking = () => {
     const confirm = window.confirm("Are you sure you want to Delete?");
 
     if (confirm) {
-      fetch(`http://localhost:5000/booking/${id}`, {
+      fetch(`http://localhost:5000/api/booking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

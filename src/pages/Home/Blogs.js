@@ -8,7 +8,7 @@ import Blog from "./Blog";
 const Blogs = () => {
   // fetch data from database using react query
   const { data: blogs, isLoading } = useQuery("blogs", () =>
-    fetch("http://localhost:5000/blog").then((res) => res.json())
+    fetch("http://localhost:5000/api/blog").then((res) => res.json())
   );
 
   // loading
@@ -29,8 +29,7 @@ const Blogs = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-y-8">
-        {blogs
-          .slice(0, 2)
+        {blogs.data
           .map((blog) => <Blog key={blog._id} blog={blog} />)
           .reverse()}
       </div>

@@ -1,7 +1,7 @@
 import "../../assets/styles/style.css";
 
 const Review = ({ review }) => {
-  const { profileImg, name, rating, msg } = review;
+  const { img, name, rating, msg } = review;
 
   const reviewIcon = (
     <>
@@ -18,26 +18,26 @@ const Review = ({ review }) => {
 
   return (
     <div className="flex flex-col items-center text-center px-7 py-6 rounded-lg shadow-sm bg-white">
-      <img className="w-14 h-14 rounded-full" src={profileImg} alt="" />
+      <img className="w-14 h-14 rounded-full" src={img} alt="" />
       <div className="flex justify-between w-full py-4 px-6">
         <div>
-          {rating === "1" && <span className="flex">{reviewIcon}</span>}
-          {rating === "2" && (
+          {rating === 1 && <span className="flex">{reviewIcon}</span>}
+          {rating === 2 && (
             <span className="flex">
               {reviewIcon} {reviewIcon}
             </span>
           )}
-          {rating === "3" && (
+          {rating === 3 && (
             <span className="flex">
               {reviewIcon} {reviewIcon} {reviewIcon}
             </span>
           )}
-          {rating === "4" && (
+          {rating === 4 && (
             <span className="flex">
               {reviewIcon} {reviewIcon} {reviewIcon} {reviewIcon}
             </span>
           )}
-          {rating === "5" && (
+          {rating === 5 && (
             <span className="flex">
               {reviewIcon} {reviewIcon} {reviewIcon} {reviewIcon} {reviewIcon}
             </span>

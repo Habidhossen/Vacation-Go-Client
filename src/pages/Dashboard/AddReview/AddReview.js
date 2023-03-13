@@ -24,7 +24,7 @@ const AddReview = () => {
     const reviewData = { profileImg, name, rating, msg };
 
     // send data to the server
-    fetch("http://localhost:5000/review", {
+    fetch("http://localhost:5000/api/review", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

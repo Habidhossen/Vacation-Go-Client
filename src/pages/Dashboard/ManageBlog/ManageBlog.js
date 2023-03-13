@@ -10,7 +10,7 @@ const ManageBlog = () => {
     isLoading,
     refetch,
   } = useQuery("blog", () =>
-    fetch("http://localhost:5000/blog").then((res) => res.json())
+    fetch("http://localhost:5000/api/blog").then((res) => res.json())
   );
 
   // loading
@@ -23,7 +23,7 @@ const ManageBlog = () => {
     const confirm = window.confirm("Are you sure you want to Delete?");
 
     if (confirm) {
-      fetch(`http://localhost:5000/blog/${id}`, {
+      fetch(`http://localhost:5000/api/blog/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

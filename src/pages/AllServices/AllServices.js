@@ -6,7 +6,7 @@ import Loader from "../Shared/Loader/Loader";
 const AllServices = () => {
   // fetch data from database using react query
   const { data: services, isLoading } = useQuery("services", () =>
-    fetch("http://localhost:5000/service").then((res) => res.json())
+    fetch("http://localhost:5000/api/service").then((res) => res.json())
   );
 
   // loading
@@ -17,7 +17,7 @@ const AllServices = () => {
   return (
     <div className="px-20 py-8">
       <div className="grid grid-cols-3 gap-6">
-        {services
+        {services.data
           .map((service) => (
             <div className="bg-white">
               <img className="" src={service.imgURL} alt="" />

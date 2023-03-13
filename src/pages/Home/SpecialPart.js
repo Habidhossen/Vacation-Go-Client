@@ -30,7 +30,7 @@ const SpecialPart = () => {
         <h3 className="font-fredoka text-6xl text-white ">
           Holiday Special 25% Off!
         </h3>
-        <button class="bg-secondary text-white font-semibold hover:bg-transparent hover:text-secondary py-4 px-8 border border-secondary hover:border-secondary rounded-full">
+        <button className="bg-secondary text-white font-semibold hover:bg-transparent hover:text-secondary py-4 px-8 border border-secondary hover:border-secondary rounded-full">
           Booking now
         </button>
       </div>
