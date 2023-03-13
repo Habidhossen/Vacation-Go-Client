@@ -17,7 +17,7 @@ const Services = () => {
   }
 
   return (
-    <section className="my-16 px-20">
+    <section className="my-16 px-6 md:px-20 lg:px-20">
       <div className="flex justify-center items-center gap-3 mb-16">
         <div className="section-title-bar"></div>
         <div>
@@ -28,7 +28,7 @@ const Services = () => {
         <div className="section-title-bar"></div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {services.data
           .slice(0, 3)
           .map((service) => <Service key={service._id} service={service} />)

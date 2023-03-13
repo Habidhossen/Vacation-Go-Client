@@ -6,7 +6,7 @@ import travelersBg from "../../assets/images/travelersBg.svg";
 
 const SummaryPart = () => {
   return (
-    <section className="px-20 py-28 bg-[#eaf6f6]">
+    <section className="px-6 md:px-20 lg:px-20 py-28 bg-[#eaf6f6]">
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="relative">
           <img className="p-4" src={travelersBg} alt="" />

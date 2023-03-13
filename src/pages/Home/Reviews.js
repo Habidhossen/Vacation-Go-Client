@@ -22,7 +22,7 @@ const Reviews = () => {
   }
 
   return (
-    <section className="my-16 px-20">
+    <section className="my-16 px-4 md:px-20 lg:px-20">
       <div className="flex justify-center items-center gap-3 mb-16">
         <div className="section-title-bar"></div>
         <div>
@@ -34,6 +34,20 @@ const Reviews = () => {
       </div>
 
       <Swiper
+        breakpoints={{
+          576: {
+            slidesPerView: 1,
+            // spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            // spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            // spaceBetween: 40,
+          },
+        }}
         effect={"coverflow"}
         autoplay={{
           delay: 2000,
@@ -44,7 +58,7 @@ const Reviews = () => {
         }}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"3"}
+        // slidesPerView={"3"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,

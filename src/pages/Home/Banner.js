@@ -62,11 +62,11 @@ const Banner = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundSize: "cover",
-              minHeight: "600px",
+              minHeight: "700px",
             }}
           >
-            <div className="flex flex-col justify-start items-start px-20">
-              <h1 className="font-fredoka text-6xl leading-snug text-transparent bg-clip-text bg-gradient-to-r from-[#48c6ef] to-[#6f86d6]">
+            <div className="px-6 md:px-20 lg:px-20 py-6 md:py-20 lg:py-20 flex flex-col justify-start items-start">
+              <h1 className="font-fredoka text-4xl md:text-6xl lg:text-6xl leading-snug text-transparent bg-clip-text bg-gradient-to-r from-[#48c6ef] to-[#6f86d6]">
                 {banner.titleSpan} <br />
                 <span className="text-white">{banner.title}</span>{" "}
               </h1>
