@@ -24,6 +24,26 @@ const SignUp = () => {
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
+    saveUserDB(data.name, data.email);
+  };
+
+  // save user to database
+  const saveUserDB = (name, email) => {
+    const createUserData = { name, email };
+    fetch("http://localhost:5000/api/user", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(createUserData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   // if user created
