@@ -43,7 +43,7 @@ const ManageBlog = () => {
     <div>
       <div className="overflow-x-auto p-4">
         <h1 className="text-xl text-primary font-semibold mb-4">
-          All Blogs ({blogs.length})
+          All Blogs ({blogs.data.length})
         </h1>
         <table className="table w-full">
           <thead>
@@ -55,7 +55,7 @@ const ManageBlog = () => {
             </tr>
           </thead>
           <tbody className="text-sm">
-            {blogs.map((blog) => (
+            {blogs.data.map((blog) => (
               <tr key={blog._id}>
                 <td>{blog._id}</td>
                 <td>{blog.title}</td>

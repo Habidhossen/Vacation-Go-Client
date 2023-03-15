@@ -42,7 +42,7 @@ const ManageBooking = () => {
     <div>
       <div className="overflow-x-auto p-4">
         <h1 className="text-xl text-primary font-semibold mb-4">
-          All Bookings ({bookings.length})
+          All Bookings ({bookings.data.length})
         </h1>
         <table className="table w-full">
           <thead>
@@ -56,13 +56,13 @@ const ManageBooking = () => {
             </tr>
           </thead>
           <tbody className="text-sm">
-            {bookings.map((booking) => (
+            {bookings.data.map((booking) => (
               <tr key={booking._id}>
-                <td>{booking.name}</td>
-                <td>{booking.email}</td>
+                <td>{booking.userName}</td>
+                <td>{booking.userEmail}</td>
                 <td>{booking.serviceName}</td>
                 <td>${booking.price}</td>
-                <td>{booking.date}</td>
+                <td>{booking.bookingDate}</td>
                 <td>
                   <button onClick={() => handleBookingDelete(booking._id)}>
                     <FiTrash2 className="text-red-500" />

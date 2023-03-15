@@ -42,7 +42,7 @@ const ManageService = () => {
     <div>
       <div className="overflow-x-auto p-4">
         <h1 className="text-xl text-primary font-semibold mb-4">
-          All Services ({services.length})
+          All Services ({services.data.length})
         </h1>
         <table className="table w-full">
           <thead>
@@ -54,7 +54,7 @@ const ManageService = () => {
             </tr>
           </thead>
           <tbody className="text-sm">
-            {services.map((service) => (
+            {services.data.map((service) => (
               <tr key={service._id}>
                 <td>{service._id}</td>
                 <td>{service.name}</td>
