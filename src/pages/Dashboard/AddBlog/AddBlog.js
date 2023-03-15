@@ -16,11 +16,11 @@ const AddBlog = () => {
 
   // submit button
   const onSubmit = (data) => {
-    const imgURL = data.imgURL;
+    const img = data.img;
     const title = data.title;
     const desc = data.desc;
     const date = currentDate;
-    const blogData = { imgURL, title, desc, date };
+    const blogData = { img, title, desc, date };
 
     // send data to the server
     fetch("http://localhost:5000/api/blog", {
@@ -63,9 +63,9 @@ const AddBlog = () => {
                 type="text"
                 placeholder="Image URL"
                 className="input input-bordered"
-                {...register("imgURL", { required: true })}
+                {...register("img", { required: true })}
               />
-              {errors.imgURL && (
+              {errors.img && (
                 <span className="label-text-alt text-red-500 mt-2">
                   Image URL is Required!
                 </span>

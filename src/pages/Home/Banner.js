@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Import images
+import { Link } from "react-router-dom";
 import banner1 from "../../assets/images/banner1.png";
 import banner2 from "../../assets/images/banner2.png";
 import banner3 from "../../assets/images/banner3.png";
@@ -71,7 +72,9 @@ const Banner = () => {
                 <span className="text-white">{banner.title}</span>{" "}
               </h1>
               <p className="mt-6 mb-8 w-1/2 text-white">{banner.desc}</p>
-              <button className="custom-primary-btn">Book now</button>
+              <Link to="/service" className="custom-primary-btn">
+                Book now
+              </Link>
             </div>
           </SwiperSlide>
         ))}

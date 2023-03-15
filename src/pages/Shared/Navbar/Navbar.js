@@ -102,11 +102,15 @@ const Navbar = () => {
           // </button>
 
           <div className="dropdown dropdown-hover dropdown-end">
-            <label
-              tabindex="0"
-              className="flex items-center gap-3 font-fredoka text-primary"
-            >
-              {user.displayName}
+            <label tabindex="0" className="flex items-center gap-3">
+              <div className="flex flex-col text-right">
+                <p className="font-mulish font-bold text-sm text-heading">
+                  {user.displayName}
+                </p>
+                <p className="font-mulish font-medium text-sm text-text">
+                  {user.email}
+                </p>
+              </div>
               <div className="avatar">
                 <div className="w-8 rounded-full ring-1 ring-primary ring-offset-base-100 ring-offset-2">
                   {user.photoURL !== null ? (
@@ -119,19 +123,24 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+              className="dropdown-content menu p-3 shadow bg-base-100 rounded-box w-48"
             >
               <li>
-                <Link to="dashboard" className="text-center mb-2">
+                <Link to="dashboard" className="nav-link text-sm">
                   View Profile
+                </Link>
+              </li>
+              <li>
+                <Link to="dashboard/booking" className="nav-link text-sm">
+                  My Booking
                 </Link>
               </li>
               <li>
                 <button
                   onClick={logout}
-                  className="text-white font-semibold text-sm flex justify-center bg-error hover:bg-rose-600"
+                  className="py-2 bg-error text-white font-semibold text-sm flex justify-center mt-2"
                 >
-                  LOGOUT <HiOutlineLogout />
+                  Logout <HiOutlineLogout />
                 </button>
               </li>
             </ul>

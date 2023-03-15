@@ -65,9 +65,9 @@ const AddService = () => {
                 type="text"
                 placeholder="Image URL"
                 className="input input-bordered"
-                {...register("imgURL", { required: true })}
+                {...register("img", { required: true })}
               />
-              {errors.imgURL && (
+              {errors.img && (
                 <span className="label-text-alt text-red-500 mt-2">
                   Image URL is Required!
                 </span>

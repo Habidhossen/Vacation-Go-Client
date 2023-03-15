@@ -47,7 +47,7 @@ const ManageService = () => {
         <table className="table w-full">
           <thead>
             <tr>
-              <th>Product ID</th>
+              <th>Service ID</th>
               <th>Name</th>
               <th>Price</th>
               <th>Action</th>

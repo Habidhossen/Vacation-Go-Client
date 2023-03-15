@@ -1,5 +1,4 @@
 import { useAuthState } from "react-firebase-hooks/auth";
-import { FiTrash2 } from "react-icons/fi";
 import { useQuery } from "react-query";
 import { toast } from "react-toastify";
 import auth from "../../../Firebase/firebase.init";
@@ -28,7 +27,7 @@ const MyBooking = () => {
 
   // handle Booking delete button
   const handleBookingDelete = (id) => {
-    const confirm = window.confirm("Are you sure you want to Delete?");
+    const confirm = window.confirm("Are you sure you want to Cancel?");
 
     if (confirm) {
       fetch(`http://localhost:5000/api/booking/${id}`, {
@@ -51,7 +50,7 @@ const MyBooking = () => {
     <div>
       <div className="overflow-x-auto p-4">
         <h1 className="text-xl text-primary font-semibold mb-4">
-          My Bookings ({bookings.length})
+          My Bookings ({bookings.data.length})
         </h1>
         <table className="table w-full">
           <thead>
@@ -64,16 +63,19 @@ const MyBooking = () => {
             </tr>
           </thead>
           <tbody className="text-sm">
-            {bookings.map((booking) => (
+            {bookings.data.map((booking) => (
               <tr key={booking._id}>
                 <td>{booking._id}</td>
                 <td>{booking.serviceName}</td>
                 <td>${booking.price}</td>
-                <td>{booking.date}</td>
+                <td>{booking.bookingDate}</td>
 
                 <td>
-                  <button onClick={() => handleBookingDelete(booking._id)}>
-                    <FiTrash2 className="text-red-500" />
+                  <button
+                    className="bg-red-100 text-red-600 text-xs font-medium rounded-md px-2 py-1"
+                    onClick={() => handleBookingDelete(booking._id)}
+                  >
+                    Cancel Booking
                   </button>
                 </td>
               </tr>

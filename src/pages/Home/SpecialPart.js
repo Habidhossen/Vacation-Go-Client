@@ -2,6 +2,7 @@
 
 // Import React-Icon
 import { BsFillStarFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const SpecialPart = () => {
   return (
@@ -30,9 +31,12 @@ const SpecialPart = () => {
         <h3 className="font-fredoka text-6xl text-white ">
           Holiday Special 25% Off!
         </h3>
-        <button className="bg-secondary text-white font-semibold hover:bg-transparent hover:text-secondary py-4 px-8 border border-secondary hover:border-secondary rounded-full">
+        <Link
+          to="/service"
+          className="bg-secondary text-white font-semibold hover:bg-transparent hover:text-secondary py-4 px-8 border border-secondary hover:border-secondary rounded-full"
+        >
           Booking now
-        </button>
+        </Link>
       </div>
     </section>
   );
