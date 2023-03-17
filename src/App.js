@@ -8,6 +8,7 @@ import AddBlog from "./pages/Dashboard/AddBlog/AddBlog";
 import AddReview from "./pages/Dashboard/AddReview/AddReview";
 import AddService from "./pages/Dashboard/AddService/AddService";
 import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import ManageBlog from "./pages/Dashboard/ManageBlog/ManageBlog";
 import ManageBooking from "./pages/Dashboard/ManageBooking/ManageBooking";
 import ManageService from "./pages/Dashboard/ManageService/ManageService";
@@ -58,6 +59,7 @@ function App() {
           <Route path="manage-service" element={<ManageService />} />
           <Route path="manage-blog" element={<ManageBlog />} />
           <Route path="manage-booking" element={<ManageBooking />} />
+          <Route path="make-admin" element={<MakeAdmin />} />
         </Route>
       </Routes>
     </div>
