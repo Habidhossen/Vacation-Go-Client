@@ -9,12 +9,12 @@ const Blog = ({ blog }) => {
     <div className="flex gap-6 items-center px-16">
       <img className="w-96 rounded-md" src={img} alt="" />
       <div>
-        <p className="flex items-center gap-2 text-sm text-text italic mb-1">
+        <p className="flex items-center gap-2 text-sm text-text mb-1">
           <FaRegCalendar className="text-secondary" />
           {date}
         </p>
         <h1 className="font-fredoka text-heading text-xl">{title}</h1>
-        <p className="py-4 text-text">{desc.slice(0, 200) + "..."}</p>
+        <p className="py-4 text-text text-base">{desc.slice(0, 200) + "..."}</p>
         <Link
           to={`/blog/${_id}`}
           className="flex items-center gap-2 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300"

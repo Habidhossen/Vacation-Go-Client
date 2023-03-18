@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link className="nav-brand" to="/">
-          <span>Vacation</span> Go
+          Vacation Go.
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -114,7 +114,7 @@ const SignUp = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 className="input input-bordered"
                 {...register("password", { required: true })}
@@ -133,7 +133,7 @@ const SignUp = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Signup</button>
+              <button className="custom-primary-btn">Create Account</button>
             </div>
           </form>
         </div>

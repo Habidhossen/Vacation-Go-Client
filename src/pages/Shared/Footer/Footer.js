@@ -1,5 +1,4 @@
 import { HiMail, HiPhone } from "react-icons/hi";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -61,19 +60,18 @@ const Footer = () => {
       <hr className="mt-8" />
       <div className="flex items-center justify-between py-5">
         <div className="flex items-center gap-5">
-          <Link className="nav-brand" to="/">
-            <span>Vacation</span> Go
-          </Link>
-          <p className="flex items-center gap-1 text-text">
+          <p className="flex items-center gap-1 text-text text-sm font-semibold">
             <HiMail className="text-secondary" /> Help@support.com
           </p>
-          <p className="flex items-center gap-1 text-text">
+          <p className="flex items-center gap-1 text-text text-sm font-semibold">
             <HiPhone className="text-secondary" /> (+123) 456 7890
           </p>
         </div>
         <div className="text-center">
-          <p className="text-text">Copyright © {year} Vacation Go.</p>
-          <p className="text-sm text-text mt-1">
+          <p className="text-text text-sm font-semibold">
+            Copyright © {year} Vacation Go.
+          </p>
+          {/* <p className="text-sm text-text mt-1">
             Developed by{" "}
             <a
               className="text-primary"
@@ -83,7 +81,7 @@ const Footer = () => {
             >
               Habid Hossen
             </a>
-          </p>{" "}
+          </p>{" "} */}
         </div>
       </div>
     </footer>

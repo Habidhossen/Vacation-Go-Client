@@ -3,26 +3,27 @@ import { Link } from "react-router-dom";
 import "../../assets/styles/style.css";
 
 const Service = ({ service }) => {
-  const { _id, name, price, img } = service;
+  const { _id, name, price, desc, img } = service;
 
   return (
-    <div className="bg-white">
-      <img className="" src={img} alt="" />
-      <div className="flex flex-col items-center p-4">
-        <h1 className="text-lg text-heading font-semibold">{name}</h1>
-        <p className="font-fredoka text-2xl text-primary mt-1">
+    <div className="bg-white rounded-lg p-3">
+      <img className="rounded-md" src={img} alt="" />
+      <div className="flex items-center justify-between my-3">
+        <h1 className="text-base text-heading font-bold">{name}</h1>
+        <p className="font-fredoka text-xl text-primary mt-1">
           ${price}{" "}
-          <span className="text-base text-text">
-            <del>${Number(price) + 100}</del>
+          <span className="font-mulish font-semibold text-sm text-text">
+            <del>${Number(price) + 9}</del>
           </span>
         </p>
-        <Link
-          to={`/service/${_id}`}
-          className="flex items-center gap-2 mt-14 uppercase -tracking-tight text-sm font-bold text-secondary hover:text-primary duration-300"
-        >
-          Checkout <FaLongArrowAltRight />
-        </Link>
       </div>
+      <p className="text-text text-sm">{desc.slice(0, 50) + "..."}</p>
+      <Link
+        to={`/service/${_id}`}
+        className="flex items-center justify-center gap-2 bg-slate-100 p-2 rounded-lg text-sm text-heading font-bold mt-6 hover:bg-orange-100 duration-300"
+      >
+        More Info <FaLongArrowAltRight />
+      </Link>
     </div>
   );
 };

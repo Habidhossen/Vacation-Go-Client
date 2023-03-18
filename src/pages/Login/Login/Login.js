@@ -86,7 +86,7 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="password"
                 className="input input-bordered"
                 {...register("password", { required: true })}
@@ -107,13 +107,13 @@ const Login = () => {
             </div>
             {errorMessage}
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="custom-primary-btn">Login</button>
             </div>
           </form>
-          <div className="divider">OR</div>
+          <div className="divider">Or</div>
           <button
             onClick={handleGoogleSignIn}
-            className="btn btn-outline gap-2"
+            className="flex items-center justify-center gap-2 bg-slate-200 py-3 rounded-lg font-bold text-sm hover:bg-slate-300 duration-300"
           >
             <FcGoogle className="text-2xl" /> Continue with Google
           </button>

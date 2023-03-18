@@ -33,7 +33,7 @@ const SpecialPart = () => {
         </h3>
         <Link
           to="/service"
-          className="bg-secondary text-white font-semibold hover:bg-transparent hover:text-secondary py-4 px-8 border border-secondary hover:border-secondary rounded-full"
+          className="bg-secondary text-white font-semibold hover:bg-transparent hover:text-white py-3 px-8 border border-secondary hover:border-white rounded-full duration-300"
         >
           Booking now
         </Link>

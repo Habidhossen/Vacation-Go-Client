@@ -15,7 +15,7 @@ const AllServices = () => {
 
   return (
     <div className="px-20 py-8">
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-4 gap-4">
         {services.data
           .map((service) => <Service key={service._id} service={service} />)
           .reverse()}
