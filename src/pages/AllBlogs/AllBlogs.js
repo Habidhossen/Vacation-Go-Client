@@ -13,7 +13,7 @@ const AllBlogs = () => {
     return <Loader />;
   }
   return (
-    <div className="px-20 py-8">
+    <div className="py-8 px-6 md:px-20 lg:px-20">
       <div className="grid grid-cols-1 gap-y-8">
         {blogs.data.map((blog) => (
           <Blog key={blog._id} blog={blog} />

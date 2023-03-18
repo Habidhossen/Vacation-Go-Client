@@ -12,7 +12,7 @@ const SubscribeNews = () => {
           Join for the latest news, including special offers, events,
           collaborations, and new arrivals.
         </p>
-        <div className="flex">
+        <div className="flex px-3">
           <input
             className="bg-gray-50 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white"
             type="email"

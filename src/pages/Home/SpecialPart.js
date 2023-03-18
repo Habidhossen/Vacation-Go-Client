@@ -28,7 +28,7 @@ const SpecialPart = () => {
           <BsFillStarFill />
           <BsFillStarFill />
         </div>
-        <h3 className="font-fredoka text-6xl text-white ">
+        <h3 className="font-fredoka text-6xl text-white text-center">
           Holiday Special 25% Off!
         </h3>
         <Link

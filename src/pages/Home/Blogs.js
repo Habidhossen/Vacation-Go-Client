@@ -17,7 +17,7 @@ const Blogs = () => {
   }
 
   return (
-    <section className="py-16 px-20">
+    <section className="py-16 px-6 md:px-20 lg:px-20">
       <div className="flex justify-center items-center gap-3 mb-16">
         <div className="section-title-bar"></div>
         <div>
@@ -28,7 +28,7 @@ const Blogs = () => {
         <div className="section-title-bar"></div>
       </div>
 
-      <div className="grid grid-cols-1 gap-y-8">
+      <div className="grid grid-cols-1 gap-y-10">
         {blogs.data
           .map((blog) => <Blog key={blog._id} blog={blog} />)
           .reverse()}

@@ -71,7 +71,9 @@ const Banner = () => {
                 {banner.titleSpan} <br />
                 <span className="text-white">{banner.title}</span>{" "}
               </h1>
-              <p className="mt-6 mb-8 w-1/2 text-white">{banner.desc}</p>
+              <p className="mt-6 mb-8 w-full md:w-1/2 lg:w-1/2 text-white">
+                {banner.desc}
+              </p>
               <Link to="/service" className="custom-primary-btn">
                 Book now
               </Link>
