@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="mt-8" />
-      <div className="flex items-center justify-between py-5">
+      <div className="flex-col md:flex-row lg:flex items-center justify-between py-5">
         <div className="flex items-center gap-5">
           <p className="flex items-center gap-1 text-text text-sm font-semibold">
             <HiMail className="text-secondary" /> Help@support.com

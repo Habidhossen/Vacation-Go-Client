@@ -1,12 +1,16 @@
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { HiOutlineLogout } from "react-icons/hi";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "../../../assets/styles/style.css";
 import auth from "../../../Firebase/firebase.init";
 
 const Navbar = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
+
+  // get current URL or location
+  const location = useLocation();
+  const currentUrl = location.pathname;
 
   // handle logout
   const logout = () => {
@@ -79,35 +83,44 @@ const Navbar = () => {
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
       <div className="navbar-end lg:hidden">
-        <label htmlFor="side-drawer" className="btn btn-primary lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="inline-block w-5 h-5 stroke-current"
+        {(currentUrl === "/dashboard" ||
+          currentUrl === "/dashboard/booking" ||
+          currentUrl === "/dashboard/add-review" ||
+          currentUrl === "/dashboard/add-service" ||
+          currentUrl === "/dashboard/add-blog" ||
+          currentUrl === "/dashboard/manage-service" ||
+          currentUrl === "/dashboard/manage-blog" ||
+          currentUrl === "/dashboard/manage-booking" ||
+          currentUrl === "/dashboard/make-admin") && (
+          <label
+            htmlFor="side-drawer"
+            className="btn btn-primary text-white lg:hidden"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-5 h-5 stroke-current"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </label>
+        )}
       </div>
       <div className="navbar-end">
         {user ? (
-          // <button onClick={logout} className="text-error">
-          //   LOGOUT
-          // </button>
-
           <div className="dropdown dropdown-hover dropdown-end">
             <label tabindex="0" className="flex items-center gap-3">
               <div className="flex flex-col text-right">
                 <p className="font-mulish font-bold text-sm text-heading">
                   {user.displayName}
                 </p>
-                <p className="font-mulish font-medium text-sm text-text">
+                <p className="font-mulish font-medium text-xs text-text">
                   {user.email}
                 </p>
               </div>

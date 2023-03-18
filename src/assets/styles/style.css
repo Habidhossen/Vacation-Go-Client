@@ -75,3 +75,14 @@
   height: 2px;
   width: 50px;
 }
+
+@media (max-width: 576px) {
+  /* Nav Brand */
+  .nav-brand {
+    font-size: 14px;
+  }
+  /* Section Title */
+  .section-title {
+    font-size: 20px;
+  }
+}

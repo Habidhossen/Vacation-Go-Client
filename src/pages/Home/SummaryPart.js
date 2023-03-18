@@ -1,4 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import profileOne from "../../assets/images/profileOne.png";
 import profileThree from "../../assets/images/profileThree.png";
 import profileTwo from "../../assets/images/profileTwo.png";
@@ -37,7 +38,7 @@ const SummaryPart = () => {
           </div>
         </div>
         <div>
-          <h1 className="font-fredoka text-heading text-5xl leading-tight mb-4">
+          <h1 className="font-fredoka text-heading text-3xl md:text-5xl lg:text-5xl leading-tight mb-6">
             Guaranteed quality tour guide services
           </h1>
           <p className="text-lg text-text mb-4">
@@ -47,7 +48,7 @@ const SummaryPart = () => {
             intimate tour that is tailored to your specific needs and interests.
           </p>
           <hr />
-          <div className="my-6 flex-row ">
+          <div className="my-8 flex-row">
             <p className="flex items-center gap-4 text-lg text-text">
               <FaCheckCircle className="text-secondary" /> Professional tour
               guide services
@@ -65,11 +66,13 @@ const SummaryPart = () => {
               professionalism and quality
             </p>
           </div>
-          <button className="custom-primary-btn">Explore More</button>
+          <Link to="/service" className="custom-primary-btn">
+            Explore More
+          </Link>
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-32 mx-0">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-32 mx-0 space-y-6 md:space-y-0 lg:space-y-0">
         <div className="text-center">
           <h1 className="text-5xl font-fredoka text-text">25K+</h1>
           <h5 className="text-lg mt-2 text-heading">Happy Clients</h5>

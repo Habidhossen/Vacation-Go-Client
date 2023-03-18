@@ -66,7 +66,7 @@ const Banner = () => {
               minHeight: "700px",
             }}
           >
-            <div className="px-6 md:px-20 lg:px-20 py-6 md:py-20 lg:py-20 flex flex-col justify-start items-start">
+            <div className="px-6 md:px-20 lg:px-20 py-6 md:py-0 lg:py-0 flex flex-col justify-start items-start">
               <h1 className="font-fredoka text-4xl md:text-6xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#48c6ef] to-[#6f86d6]">
                 {banner.titleSpan} <br />
                 <span className="text-white">{banner.title}</span>{" "}

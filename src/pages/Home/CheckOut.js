@@ -53,12 +53,10 @@ const CheckOut = () => {
   const { _id, name, img, price, desc } = service.data;
 
   return (
-    <div className="grid grid-cols-1 gap-y-8 mt-10 px-36">
-      <div className="grid grid-cols-2 items-center bg-white rounded-md">
-        <div className="">
-          <img className="w-full rounded-md" src={img} alt="" />
-        </div>
-        <div className="mx-4 flex flex-col gap-y-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-10 px-6 md:px-36 lg:px-36">
+      <div className="flex-col items-center bg-white rounded-md">
+        <img className="w-full rounded-md" src={img} alt="" />
+        <div className="m-4 flex flex-col gap-y-3">
           <p className="text-text">ID: {_id}</p>
           <p className="text-text">
             Service: <b className="text-secondary">{name}</b>
@@ -69,7 +67,7 @@ const CheckOut = () => {
           <p className="text-text">Description: {desc}</p>
         </div>
       </div>
-      <div className="card shadow-sm bg-white">
+      <div className="card shadow-sm bg-white h-fit">
         <div className="card-body">
           <h1 className="text-center text-heading text-xl font-bold mb-4">
             Confirm Your Booking
