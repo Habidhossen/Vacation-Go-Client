@@ -2,7 +2,11 @@ import React from "react";
 
 const SubscribeNews = () => {
   return (
-    <section className="py-16 px-6 md:px-20 lg:px-20">
+    <section
+      data-aos="fade-right"
+      data-aos-duration="2000"
+      className="py-16 px-6 md:px-20 lg:px-20"
+    >
       <div className="flex flex-col items-center gap-y-7 py-28 text-center bg-[#feead1] rounded-xl">
         <h1 className="font-fredoka text-heading text-2xl md:text-4xl lg:text-4xl leading-normal">
           Get latest News and <br />

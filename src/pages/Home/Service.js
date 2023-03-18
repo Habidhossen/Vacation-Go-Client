@@ -6,7 +6,13 @@ const Service = ({ service }) => {
   const { _id, name, price, desc, img } = service;
 
   return (
-    <div className="bg-white rounded-lg p-3">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1500"
+      data-aos-anchor-placement="top-bottom"
+      className="bg-white rounded-lg p-3"
+    >
       <img className="rounded-md" src={img} alt="" />
       <div className="flex items-center justify-between my-3">
         <h1 className="text-base text-heading font-bold">{name}</h1>

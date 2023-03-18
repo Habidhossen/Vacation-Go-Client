@@ -17,7 +17,11 @@ const SpecialPart = () => {
         minHeight: "600px",
       }}
     >
-      <div className="flex flex-col items-center justify-center gap-6">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        className="flex flex-col items-center justify-center gap-6"
+      >
         <h1 className="text-2xl text-white font-medium uppercase">
           Holiday Package Offer
         </h1>

@@ -1,4 +1,3 @@
-import "react-datepicker/dist/react-datepicker.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { useQuery } from "react-query";

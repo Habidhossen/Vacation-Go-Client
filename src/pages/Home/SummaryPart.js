@@ -13,7 +13,11 @@ const SummaryPart = () => {
           <img className="p-4" src={travelersBg} alt="" />
 
           {/* small part */}
-          <div className="absolute top-20 left-0 flex justify-center w-52 bg-white rounded-xl shadow-sm py-3 px-0 cursor-pointer">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="absolute top-20 left-0 flex justify-center w-52 bg-white rounded-xl shadow-sm py-3 px-0 cursor-pointer"
+          >
             <div className="avatar-group -space-x-7">
               <div className="avatar">
                 <div className="w-10">
@@ -37,7 +41,7 @@ const SummaryPart = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="3000">
           <h1 className="font-fredoka text-heading text-3xl md:text-5xl lg:text-5xl leading-tight mb-6">
             Guaranteed quality tour guide services
           </h1>
