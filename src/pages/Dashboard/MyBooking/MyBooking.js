@@ -15,9 +15,9 @@ const MyBooking = () => {
     isLoading,
     refetch,
   } = useQuery("bookings", () =>
-    fetch(`http://localhost:5000/api/booking?email=${email}`).then((res) =>
-      res.json()
-    )
+    fetch(
+      `https://vacation-go-server.onrender.com/api/booking?email=${email}`
+    ).then((res) => res.json())
   );
 
   // loading
@@ -30,7 +30,7 @@ const MyBooking = () => {
     const confirm = window.confirm("Are you sure you want to Cancel?");
 
     if (confirm) {
-      fetch(`http://localhost:5000/api/booking/${id}`, {
+      fetch(`https://vacation-go-server.onrender.com/api/booking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

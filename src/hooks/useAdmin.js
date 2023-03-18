@@ -6,7 +6,7 @@ const useAdmin = (user) => {
   useEffect(() => {
     const email = user?.email;
     if (email) {
-      fetch(`http://localhost:5000/api/admin/${email}`, {
+      fetch(`https://vacation-go-server.onrender.com/api/admin/${email}`, {
         method: "GET",
         headers: {
           "content-type": "application/json",

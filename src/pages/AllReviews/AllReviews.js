@@ -5,7 +5,9 @@ import Loader from "../Shared/Loader/Loader";
 const AllReviews = () => {
   // fetch data from database using react query
   const { data: reviews, isLoading } = useQuery("reviews", () =>
-    fetch("http://localhost:5000/api/review").then((res) => res.json())
+    fetch("https://vacation-go-server.onrender.com/api/review").then((res) =>
+      res.json()
+    )
   );
 
   // loading

@@ -30,7 +30,7 @@ const SignUp = () => {
   // save user to database
   const saveUserDB = (name, email) => {
     const createUserData = { name, email };
-    fetch("http://localhost:5000/api/user", {
+    fetch("https://vacation-go-server.onrender.com/api/user", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

@@ -24,7 +24,7 @@ const AddReview = () => {
     const reviewData = { img, name, rating, msg };
 
     // send data to the server
-    fetch("http://localhost:5000/api/review", {
+    fetch("https://vacation-go-server.onrender.com/api/review", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

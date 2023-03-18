@@ -22,7 +22,7 @@ const CheckOut = () => {
   // submit button
   const onSubmit = (bookingService) => {
     // send data to the server
-    fetch("http://localhost:5000/api/booking", {
+    fetch("https://vacation-go-server.onrender.com/api/booking", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -40,9 +40,9 @@ const CheckOut = () => {
 
   // fetch data from database using react query (Service)
   const { data: service, isLoading } = useQuery("Service", () =>
-    fetch(`http://localhost:5000/api/service/${serviceID}`).then((res) =>
-      res.json()
-    )
+    fetch(
+      `https://vacation-go-server.onrender.com/api/service/${serviceID}`
+    ).then((res) => res.json())
   );
   // loading
   if (isLoading) {

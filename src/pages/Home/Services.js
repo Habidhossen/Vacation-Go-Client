@@ -8,7 +8,9 @@ import Service from "./Service";
 const Services = () => {
   // fetch data from database using react query
   const { data: services, isLoading } = useQuery("services", () =>
-    fetch("http://localhost:5000/api/service").then((res) => res.json())
+    fetch("https://vacation-go-server.onrender.com/api/service").then((res) =>
+      res.json()
+    )
   );
 
   // loading

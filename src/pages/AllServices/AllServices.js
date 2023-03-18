@@ -5,7 +5,9 @@ import Loader from "../Shared/Loader/Loader";
 const AllServices = () => {
   // fetch data from database using react query
   const { data: services, isLoading } = useQuery("services", () =>
-    fetch("http://localhost:5000/api/service").then((res) => res.json())
+    fetch("https://vacation-go-server.onrender.com/api/service").then((res) =>
+      res.json()
+    )
   );
 
   // loading

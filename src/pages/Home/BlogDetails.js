@@ -9,7 +9,9 @@ const BlogDetails = () => {
 
   // fetch data from database using react query (Blog)
   const { data: blog, isLoading } = useQuery("blog", () =>
-    fetch(`http://localhost:5000/api/blog/${blogID}`).then((res) => res.json())
+    fetch(`https://vacation-go-server.onrender.com/api/blog/${blogID}`).then(
+      (res) => res.json()
+    )
   );
   // loading
   if (isLoading) {

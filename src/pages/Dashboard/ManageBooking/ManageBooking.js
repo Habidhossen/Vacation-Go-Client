@@ -10,7 +10,9 @@ const ManageBooking = () => {
     isLoading,
     refetch,
   } = useQuery("booking", () =>
-    fetch("http://localhost:5000/api/booking").then((res) => res.json())
+    fetch("https://vacation-go-server.onrender.com/api/booking").then((res) =>
+      res.json()
+    )
   );
 
   if (isLoading) {
@@ -22,7 +24,7 @@ const ManageBooking = () => {
     const confirm = window.confirm("Are you sure you want to Delete?");
 
     if (confirm) {
-      fetch(`http://localhost:5000/api/booking/${id}`, {
+      fetch(`https://vacation-go-server.onrender.com/api/booking/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

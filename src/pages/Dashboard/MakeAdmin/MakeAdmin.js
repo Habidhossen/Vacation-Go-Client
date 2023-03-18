@@ -10,7 +10,9 @@ const MakeAdmin = () => {
     isLoading,
     refetch,
   } = useQuery("user", () =>
-    fetch("http://localhost:5000/api/user").then((res) => res.json())
+    fetch("https://vacation-go-server.onrender.com/api/user").then((res) =>
+      res.json()
+    )
   );
 
   // loading
@@ -20,7 +22,7 @@ const MakeAdmin = () => {
 
   //   handleMakeAdmin
   const makeAdmin = (email) => {
-    fetch(`http://localhost:5000/api/admin/${email}`, {
+    fetch(`https://vacation-go-server.onrender.com/api/admin/${email}`, {
       method: "PUT",
     })
       .then((response) => response.json())

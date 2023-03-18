@@ -23,7 +23,7 @@ const AddBlog = () => {
     const blogData = { img, title, desc, date };
 
     // send data to the server
-    fetch("http://localhost:5000/api/blog", {
+    fetch("https://vacation-go-server.onrender.com/api/blog", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

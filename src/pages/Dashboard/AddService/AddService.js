@@ -12,7 +12,7 @@ const AddService = () => {
   // submit button
   const onSubmit = (serviceData) => {
     // send data to the server
-    fetch("http://localhost:5000/api/service", {
+    fetch("https://vacation-go-server.onrender.com/api/service", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
