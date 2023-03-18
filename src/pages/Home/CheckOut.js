@@ -1,3 +1,4 @@
+import "react-datepicker/dist/react-datepicker.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { useQuery } from "react-query";
@@ -15,13 +16,12 @@ const CheckOut = () => {
     register,
     formState: { errors },
     handleSubmit,
+    setValue,
     reset,
   } = useForm();
 
   // submit button
   const onSubmit = (bookingService) => {
-    console.log(bookingService);
-
     // send data to the server
     fetch("http://localhost:5000/api/booking", {
       method: "POST",
@@ -49,7 +49,6 @@ const CheckOut = () => {
   if (isLoading) {
     return <Loader />;
   }
-
   // Destructuring service data
   const { _id, name, img, price, desc } = service.data;
 
