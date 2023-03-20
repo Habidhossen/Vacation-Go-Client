@@ -1,13 +1,14 @@
 // Import React-Icon
 import { BsFillStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import beachBg from "../../assets/images/beach.jpg";
 
 const SpecialPart = () => {
   return (
     <section
       className="min-h-screen flex justify-center"
       style={{
-        background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.shopify.com/s/files/1/0626/5543/0870/files/img_06_004551d2-23c5-42b5-9aad-e26700b46fd5_1512x.png?v=1642492852`,
+        background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${beachBg})`,
         backgroundRepeat: "no-repeat",
         // backgroundAttachment: "fixed",
         backgroundPosition: "center",

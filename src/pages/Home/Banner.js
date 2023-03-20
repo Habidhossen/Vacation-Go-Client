@@ -9,9 +9,9 @@ import "swiper/css/pagination";
 
 // Import images
 import { Link } from "react-router-dom";
-import banner1 from "../../assets/images/banner1.png";
-import banner2 from "../../assets/images/banner2.png";
-import banner3 from "../../assets/images/banner3.png";
+import banner1 from "../../assets/images/banner1.jpg";
+import banner2 from "../../assets/images/banner2.jpg";
+import banner3 from "../../assets/images/banner3.jpg";
 
 // Banner Array
 const bannerData = [

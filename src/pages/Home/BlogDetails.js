@@ -30,7 +30,9 @@ const BlogDetails = () => {
             <FaRegCalendar className="text-secondary" />
             {date}
           </p>
-          <h1 className="font-fredoka text-heading text-3xl">{title}</h1>
+          <h1 className="font-fredoka text-heading text-xl md:text-3xl lg:text-3xl">
+            {title}
+          </h1>
           <p className="py-4 text-text">{desc}</p>
         </div>
       </div>
