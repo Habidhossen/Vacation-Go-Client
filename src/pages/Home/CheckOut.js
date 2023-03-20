@@ -140,7 +140,7 @@ const CheckOut = () => {
               </label>
               <input
                 type="date"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 {...register("bookingDate", { required: true })}
               />
               {errors.bookingDate && (

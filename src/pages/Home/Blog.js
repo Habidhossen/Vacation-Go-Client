@@ -13,7 +13,7 @@ const Blog = ({ blog }) => {
     >
       <img className="w-96 rounded-md" src={img} alt="" />
       <div className="mt-4 md:mt-0 lg:mt-0">
-        <p className="flex items-center gap-2 text-sm text-text mb-1">
+        <p className="flex items-center gap-2 text-sm text-text italic mb-1">
           <FaRegCalendar className="text-secondary" />
           {date}
         </p>

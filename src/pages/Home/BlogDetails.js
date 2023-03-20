@@ -22,7 +22,7 @@ const BlogDetails = () => {
   const { _id, title, img, desc, date } = blog.data;
 
   return (
-    <section className="px-40 py-10">
+    <section className="px-6 md:px-40 lg:px-40 py-10">
       <div>
         <img className="w-full rounded-md mb-8" src={img} alt="" />
         <div>

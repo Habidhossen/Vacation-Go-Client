@@ -19,7 +19,7 @@ const Blogs = () => {
   }
 
   return (
-    <section className="py-16 px-6 md:px-20 lg:px-20">
+    <section className="py-16 px-6 md:px-28 lg:px-28">
       <div className="flex justify-center items-center gap-3 mb-16">
         <div className="section-title-bar"></div>
         <div>

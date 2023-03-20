@@ -9,11 +9,10 @@ import travelersBg from "../../assets/images/travelersBg.svg";
 const SummaryPart = () => {
   return (
     <section className="px-6 md:px-20 lg:px-20 py-28 bg-[#eaf6f6]">
-      <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="relative">
           <img className="p-4" src={travelersBg} alt="" />
-
-          {/* small part */}
+          {/* small part start */}
           <div
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -49,8 +48,9 @@ const SummaryPart = () => {
               <p className="text-xs text-text">Satisfied Clients</p>
             </div>
           </div>
+          {/* small part end */}
         </div>
-        <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="3000">
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
           <h1 className="font-fredoka text-heading text-3xl md:text-5xl lg:text-5xl leading-tight mb-6">
             Guaranteed quality tour guide services
           </h1>
@@ -85,7 +85,7 @@ const SummaryPart = () => {
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-32 mx-0 space-y-6 md:space-y-0 lg:space-y-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-32 space-y-6 md:space-y-0 lg:space-y-0">
         <div className="text-center">
           <h1 className="text-5xl font-fredoka text-text">
             <CountUp end={25} duration={2} delay={2} enableScrollSpy={true} />

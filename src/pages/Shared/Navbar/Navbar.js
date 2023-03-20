@@ -1,16 +1,16 @@
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { HiOutlineLogout } from "react-icons/hi";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../../../assets/styles/style.css";
 import auth from "../../../Firebase/firebase.init";
 
 const Navbar = () => {
   const [user] = useAuthState(auth); // get user info from useAuthState
 
-  // get current URL or location
+  /*   // get current URL or location
   const location = useLocation();
-  const currentUrl = location.pathname;
+  const currentUrl = location.pathname; */
 
   // handle logout
   const logout = () => {
@@ -82,7 +82,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
       </div>
-      <div className="navbar-end lg:hidden">
+      {/* <div className="navbar-end lg:hidden">
         {(currentUrl === "/dashboard" ||
           currentUrl === "/dashboard/booking" ||
           currentUrl === "/dashboard/add-review" ||
@@ -111,7 +111,7 @@ const Navbar = () => {
             </svg>
           </label>
         )}
-      </div>
+      </div> */}
       <div className="navbar-end">
         {user ? (
           <div className="dropdown dropdown-hover dropdown-end">
@@ -146,6 +146,11 @@ const Navbar = () => {
               <li>
                 <Link to="dashboard/booking" className="nav-link text-sm">
                   My Booking
+                </Link>
+              </li>
+              <li>
+                <Link to="dashboard/add-review" className="nav-link text-sm">
+                  Add Review
                 </Link>
               </li>
               <li>

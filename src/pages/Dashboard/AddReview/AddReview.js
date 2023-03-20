@@ -44,7 +44,7 @@ const AddReview = () => {
     <section className="mt-16">
       <div className="card w-96 mx-auto shadow-sm bg-base-100">
         <div className="card-body">
-          <h1 className="text-center text-xl font-bold mb-4">Reviews</h1>
+          <h1 className="text-center text-xl font-bold mb-4">Add a Review</h1>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control">
               <label className="label">

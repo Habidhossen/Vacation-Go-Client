@@ -19,7 +19,8 @@ const SpecialPart = () => {
     >
       <div
         data-aos="zoom-in"
-        data-aos-duration="1000"
+        data-aos-delay="50"
+        data-aos-duration="1500"
         className="flex flex-col items-center justify-center gap-6"
       >
         <h1 className="text-2xl text-white font-medium uppercase">

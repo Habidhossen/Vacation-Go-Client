@@ -17,7 +17,6 @@ const HomePage = () => {
       <SummaryPart />
       <Reviews />
       <SubscribeNews />
-      {/* <Contact /> */}
       <Footer />
     </div>
   );

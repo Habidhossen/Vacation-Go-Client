@@ -72,7 +72,7 @@ const MyBooking = () => {
 
                 <td>
                   <button
-                    className="bg-red-100 text-red-600 text-xs font-medium rounded-md px-2 py-1"
+                    className="bg-red-600 text-white text-xs font-medium rounded-md px-2 py-1"
                     onClick={() => handleBookingDelete(booking._id)}
                   >
                     Cancel Booking
