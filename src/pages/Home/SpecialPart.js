@@ -1,5 +1,3 @@
-// Import images
-
 // Import React-Icon
 import { BsFillStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -20,7 +18,7 @@ const SpecialPart = () => {
       <div
         data-aos="zoom-in"
         data-aos-delay="50"
-        data-aos-duration="1500"
+        data-aos-duration="1000"
         className="flex flex-col items-center justify-center gap-6"
       >
         <h1 className="text-2xl text-white font-medium uppercase">

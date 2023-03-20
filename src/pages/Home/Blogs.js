@@ -32,6 +32,7 @@ const Blogs = () => {
 
       <div className="grid grid-cols-1 gap-y-10">
         {blogs.data
+          .slice(0, 3)
           .map((blog) => <Blog key={blog._id} blog={blog} />)
           .reverse()}
       </div>

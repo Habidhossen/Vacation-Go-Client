@@ -26,7 +26,7 @@ const Service = ({ service }) => {
       <p className="text-text text-sm">{desc.slice(0, 50) + "..."}</p>
       <Link
         to={`/service/${_id}`}
-        className="flex items-center justify-center gap-2 bg-slate-100 p-2 rounded-lg text-sm text-heading font-bold mt-6 hover:bg-orange-100 duration-300"
+        className="flex items-center justify-center gap-2 bg-indigo-500 p-2 rounded-lg text-sm text-white font-bold mt-6 hover:bg-indigo-600 duration-300"
       >
         More Info <FaLongArrowAltRight />
       </Link>

@@ -58,7 +58,7 @@ const Login = () => {
 
   return (
     <section className="h-[calc(100vh-120px)]">
-      <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mx-auto mt-12">
+      <div className="card flex-shrink-0 w-full max-w-sm shadow-md bg-base-100 mx-auto mt-12">
         <div className="card-body">
           <h1 className="text-center text-xl font-bold mb-4">
             Login to your account

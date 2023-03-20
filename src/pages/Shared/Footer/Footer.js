@@ -71,17 +71,6 @@ const Footer = () => {
           <p className="text-text text-sm font-semibold">
             Copyright © {year} Vacation Go.
           </p>
-          {/* <p className="text-sm text-text mt-1">
-            Developed by{" "}
-            <a
-              className="text-primary"
-              href="https://habidhossen.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Habid Hossen
-            </a>
-          </p>{" "} */}
         </div>
       </div>
     </footer>

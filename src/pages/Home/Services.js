@@ -32,7 +32,7 @@ const Services = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
         {services.data
-          .slice(0, 4)
+          .slice(0, 8)
           .map((service) => <Service key={service._id} service={service} />)
           .reverse()}
       </div>
