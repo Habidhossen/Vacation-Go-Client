@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import profileOne from "../../assets/images/profileOne.png";
@@ -36,7 +37,15 @@ const SummaryPart = () => {
               </div>
             </div>
             <div className="font-fredoka">
-              <h5 className="text-base text-primary">25k+</h5>
+              <h5 className="text-base text-primary">
+                <CountUp
+                  end={25}
+                  duration={2}
+                  delay={2}
+                  enableScrollSpy={true}
+                />
+                K+
+              </h5>
               <p className="text-xs text-text">Satisfied Clients</p>
             </div>
           </div>
@@ -78,19 +87,28 @@ const SummaryPart = () => {
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-32 mx-0 space-y-6 md:space-y-0 lg:space-y-0">
         <div className="text-center">
-          <h1 className="text-5xl font-fredoka text-text">25K+</h1>
+          <h1 className="text-5xl font-fredoka text-text">
+            <CountUp end={25} duration={2} delay={2} enableScrollSpy={true} />
+            K+
+          </h1>
           <h5 className="text-lg mt-2 text-heading">Happy Clients</h5>
         </div>
         <div className="text-center">
-          <h1 className="text-5xl font-fredoka text-text">839+</h1>
+          <h1 className="text-5xl font-fredoka text-text">
+            <CountUp end={839} duration={2} delay={2} enableScrollSpy={true} />+
+          </h1>
           <h5 className="text-lg mt-2 text-heading">Feedback</h5>
         </div>
         <div className="text-center">
-          <h1 className="text-5xl font-fredoka text-text">99+</h1>
+          <h1 className="text-5xl font-fredoka text-text">
+            <CountUp end={99} duration={2} delay={2} enableScrollSpy={true} />+
+          </h1>
           <h5 className="text-lg mt-2 text-heading">Unique Places</h5>
         </div>
         <div className="text-center">
-          <h1 className="text-5xl font-fredoka text-text">62+</h1>
+          <h1 className="text-5xl font-fredoka text-text">
+            <CountUp end={25} duration={2} delay={2} enableScrollSpy={true} />+
+          </h1>
           <h5 className="text-lg mt-2 text-heading">Events</h5>
         </div>
       </div>
