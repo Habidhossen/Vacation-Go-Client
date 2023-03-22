@@ -17,4 +17,4 @@ Live Site: [https://vacation-go-fd165.web.app/](https://vacation-go-fd165.web.ap
 
 ### Uses Technologies
 
-`React`, `React-Router`, `Tailwind CSS`, `Daisy UI`, `Firebase`, `React-Firebase-Hooks`, `React-Hook-Form`, `React-Query`,`React-Toastify`, `React-Spinners`, `React-Countup`, `AOS`, `Node.js`, `Express.js`, `MongoDB`, `Mongoose`, `Stripe`, `MVC Architecture`
+`React`, `React-Router`, `Tailwind CSS`, `Daisy UI`, `Firebase`, `React-Firebase-Hooks`, `React-Hook-Form`, `React-Query`,`React-Toastify`, `React-Spinners`, `React-Countup`, `AOS`, `Node.js`, `Express.js`, `MongoDB`, `Mongoose`, `MVC Architecture`
