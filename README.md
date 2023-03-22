@@ -7,7 +7,8 @@ Live Site: [https://vacation-go-fd165.web.app/](https://vacation-go-fd165.web.ap
 ### Features
 
 - Tourists can view all `Services` and confirm the `Booking`.
-- Tourists can view previous trip `Blogs` and `Reviews` from other travelers. which can provide valuable insights and recommendations for planning their own adventures.
+- Tourists can view previous trip `Blogs` and `Reviews` from other travelers. which can provide valuable insights and recommendations for planning their own adventures. And also give their valuable reviews.
+- Tourists can view their profile, get any offers news section, subscribe to the email section, and much more info about the tour guide and his services.
 - The website's admin has full access to all functionalities, including adding and deleting services and blogs, canceling bookings, promoting other users to admin, viewing all bookings, and overall control of the website.
 - This website uses two-factor authentication with `Google login` and an `Email-Password-based` login system controlled by Firebase, which helps improve security.
 - `MongoDB` is used as the database for this website. MongoDB is a popular NoSQL database that is known for its flexibility and ability to handle large amounts of data. `Mongoose` is also used, which simplifies data modeling and database operations in Node.js.
